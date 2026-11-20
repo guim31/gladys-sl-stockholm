@@ -1,0 +1,370 @@
+{
+  "departures": [
+    {
+      "destination": "Hagede",
+      "via": "Styrsvik Långvik Sandhamn",
+      "direction_code": 1,
+      "direction": "Hagede",
+      "state": "EXPECTED",
+      "display": "10 min",
+      "scheduled": "2026-11-20T09:50:00",
+      "expected": "2026-11-20T09:50:00",
+      "journey": {
+        "id": 2026112001623,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "10:20",
+      "scheduled": "2026-11-20T10:20:00",
+      "expected": "2026-11-20T10:20:00",
+      "journey": {
+        "id": 2026112002326,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 23,
+        "designation": "23",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "11:18",
+      "scheduled": "2026-11-20T11:18:00",
+      "expected": "2026-11-20T11:18:00",
+      "journey": {
+        "id": 2026112002328,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 23,
+        "designation": "23",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "13:18",
+      "scheduled": "2026-11-20T13:18:00",
+      "expected": "2026-11-20T13:18:00",
+      "journey": {
+        "id": 2026112002330,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 23,
+        "designation": "23",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "14:20",
+      "scheduled": "2026-11-20T14:20:00",
+      "expected": "2026-11-20T14:20:00",
+      "journey": {
+        "id": 2026112001624,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hagede",
+      "via": "Styrsvik Långvik Sandhamn",
+      "direction_code": 1,
+      "direction": "Hagede",
+      "state": "EXPECTED",
+      "display": "14:50",
+      "scheduled": "2026-11-20T14:50:00",
+      "expected": "2026-11-20T14:50:00",
+      "journey": {
+        "id": 2026112001625,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Saltsjöbaden",
+      "via": "Nämdö",
+      "direction_code": 1,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "15:15",
+      "scheduled": "2026-11-20T15:15:00",
+      "expected": "2026-11-20T15:15:00",
+      "journey": {
+        "id": 2026112001725,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hagede",
+      "via": "Styrsvik Långvik Sandhamn",
+      "direction_code": 1,
+      "direction": "Hagede",
+      "state": "EXPECTED",
+      "display": "16:45",
+      "scheduled": "2026-11-20T16:45:00",
+      "expected": "2026-11-20T16:45:00",
+      "journey": {
+        "id": 2026112001627,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "17:50",
+      "scheduled": "2026-11-20T17:50:00",
+      "expected": "2026-11-20T17:50:00",
+      "journey": {
+        "id": 2026112001626,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "18:25",
+      "scheduled": "2026-11-20T18:25:00",
+      "expected": "2026-11-20T18:25:00",
+      "journey": {
+        "id": 2026112001628,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 16,
+        "designation": "16",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Rögrund",
+      "direction_code": 1,
+      "direction": "Stavsnäs",
+      "state": "EXPECTED",
+      "display": "18:55",
+      "scheduled": "2026-11-20T18:55:00",
+      "expected": "2026-11-20T18:55:00",
+      "journey": {
+        "id": 2026112001727,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Stavsnäs",
+      "direction_code": 2,
+      "direction": "Stockholm",
+      "state": "EXPECTED",
+      "display": "20:20",
+      "scheduled": "2026-11-20T20:20:00",
+      "expected": "2026-11-20T20:20:00",
+      "journey": {
+        "id": 2026112001726,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 102,
+        "name": "Styrsvik",
+        "type": "SHIPBER"
+      },
+      "stop_point": {
+        "id": 102,
+        "name": "Styrsvik"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 8,
+        "transport_mode": "SHIP",
+        "group_of_lines": "Waxholmsbolaget"
+      },
+      "deviations": []
+    }
+  ],
+  "stop_deviations": []
+}

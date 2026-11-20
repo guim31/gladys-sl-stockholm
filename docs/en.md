@@ -1,61 +1,153 @@
-# Demo Devices Template
+# SL Stockholm
 
-This is the user documentation of the integration. Gladys re-hosts this file
-and shows a permanent **Documentation** link to it in the Configuration screen
-(in the user's language, with English as the fallback) — it is when
-configuring that the user needs it most. Keep the short onboarding hints in
-the `section` blocks of the manifest `config_schema`; put the long
-step-by-step (screenshots, troubleshooting…) here.
+Next departures of your SL stops in Stockholm in Gladys: metro, commuter trains (pendeltåg), trams,
+buses and boats, with delays, cancellations and traffic messages, in real time.
+
+The data comes from **SL** (Storstockholms Lokaltrafik), the public transport of the Stockholm
+region, through its open APIs published on [Trafiklab](https://www.trafiklab.se): **no account and
+no key**. This integration is not affiliated with SL or Trafiklab.
 
 ## What you get
 
-Six demo devices show up after installation: a weather station (real data
-from Open-Meteo), a switch, a dimmable light, a smart plug with power
-metering, a motion sensor and a camera.
+- **A device per watched stop** (optionally filtered by lines, direction or transport mode): next
+  departure and following departure (minutes), delay of the next departure (minutes), its line and
+  destination (text), and whether an SL traffic message concerns the stop or its lines (yes/no).
+- **A dashboard widget** with the next departures of a stop: time, minutes, delay, cancelled
+  departures in red, traffic messages on top.
+- **Four scene triggers**: time to leave, departure delayed, departure cancelled, new disruption.
+- **A scene action** that reads the next departures of a stop, with a sentence ready to send by
+  message or speaker.
+
+## Requirements
+
+- Gladys Assistant 5.3.0 or later.
+- Internet access from the Gladys host (the integration calls `transport.integration.sl.se` and
+  `deviations.integration.sl.se`).
+- A stop of the SL network (Stockholm county). Other Swedish regions are not covered.
+
+## Installation
+
+1. In Gladys, open **Integrations → Install from GitHub**.
+2. Paste `https://github.com/guim31/gladys-sl-stockholm` and install.
+3. Open the integration's **Configuration** tab.
 
 ## Configuration
 
-1. Open the **Configuration** tab of the integration.
-2. Set the **latitude** and **longitude** the demo weather station should
-   observe (they default to Paris), and pick your temperature unit.
-   The **refresh interval** sets how often the weather station and the
-   plug's power are read: every 5 minutes by default, every minute at most.
-3. Save: the devices appear in the **Discovery** tab, ready to be added.
+### Settings
 
-The **Prefer the local connection** toggle drives the demo plug: it reports
-the channel it actually uses as a badge (local or cloud), with an orange dot
-when it runs degraded (local refused, cloud fallback).
+- **Language of the texts**: language of the feature names (set when a device is created) and of
+  the scene sentences. SL writes its traffic messages in Swedish: they are shown as they are.
+- **Refresh interval**: 1 minute (default) or 2 minutes. One request per created device; the
+  traffic messages are read every 5 minutes.
 
-## Actions
+### Adding a stop
 
-- **Test the weather provider** — performs a live request to Open-Meteo and
-  shows the current temperature and humidity under the button.
-- **Identify a device** — pick one of your devices in the list and it will
-  signal itself (the demo light "blinks" in the logs).
+1. **Find a stop**: type a name (`Slussen`, `Odenplan`…) or its abbreviation (`TCE`). The answer
+   lists the matching stops with their number, `Slussen [9192]` for example.
+2. **Add a stop**: type the number (or the exact name when it is unique). Optional filters:
+   - **Lines**: `17, 18` keeps only these lines (as written on the vehicle: `43X`, `474`…). The
+     lines are checked against the departures of the next 20 hours.
+   - **Direction**: `Hagsätra` keeps only the departures whose destination contains this text
+     (accents and case ignored, `hagsatra` works too).
+   - **Mode**: metro, commuter train, tram, bus or boat, for the large hubs.
+3. Open the **Discover** tab and add the device to Gladys.
 
-## Scenes
+The same stop with other filters makes another device: add Slussen towards Hagsätra and Slussen
+towards Åkeshov to follow both directions. Up to 10 stops can be watched.
 
-The integration adds its own cards to the scene editor (Gladys 5.1 or
-later), under the **Integrations** category:
+### Removing a stop, checking the state
 
-- **Motion detected** (trigger) — starts the scene when a demo motion sensor
-  sees something move. Optionally pick the sensor and what moved (person,
-  animal); left empty, any detection matches. The following actions can
-  read what moved with `{{triggerEvent.data.target}}`.
-- **Identify a device** (action) — makes the chosen device signal itself.
-  It returns whether the device could signal itself, so the following
-  actions can depend on it.
+- **Remove a stop**: type its name as shown by the status (`Slussen (17)`) or its number. Its device
+  stays in Gladys until you delete it.
+- **Show what is watched**: the stops, whether their device exists, the last read from SL and the
+  last error.
 
-## Dashboard
+## Devices
 
-Add the **Demo status** widget to a dashboard: it shows the live
-temperature of the weather station and the power of the office plug, the
-connection the plug currently uses (orange when degraded) and the observed
-location. Its **Identify the light** button makes the demo light signal
-itself.
+| Feature              | Type            | Content                                                       |
+| -------------------- | --------------- | ------------------------------------------------------------- |
+| Next departure       | duration (min)  | minutes before the next departure that runs (0 = leaving now) |
+| Following departure  | duration (min)  | minutes before the one after                                  |
+| Delay                | duration (min)  | delay of the next departure (0 when on time or early)         |
+| Line and destination | text            | `17 → Åkeshov`                                                |
+| Disruption           | binary (yes/no) | an SL traffic message concerns the stop or its lines          |
+
+Cancelled departures are skipped by the countdowns. With no departure announced in the next 20
+hours, the countdowns show 1440 minutes. Only the departures kept by the filters count. A traffic
+message counts when it names the stop, or a line followed by the filter; closed lifts and entrances
+(SL's lowest importance) are left out.
+
+## Dashboard widget
+
+**Next departures**: choose a stop. The widget shows its next eight departures (line, destination,
+expected time, minutes, delay): green when counted down in real time, orange when two minutes late
+or more, red when cancelled, grey for a timetable time. The caption shows the traffic messages of
+the stop. The heading is the name you gave the device in Gladys.
+
+## Scene triggers
+
+Each trigger can be limited to a stop and to a line (as written on the vehicle, upper case).
+
+- **Time to leave**: a departure leaves in the chosen number of minutes (1 to 20). Fires once per
+  departure, when its countdown reaches the number. A departure first seen inside the window does
+  not fire.
+- **Departure delayed**: a departure is late by the chosen number of minutes or more (1 to 60).
+  Once per departure and threshold.
+- **Departure cancelled**: a departure is cancelled. Once per departure.
+- **New disruption**: a new traffic message concerns a stop or one of its followed lines. Once per
+  message and line.
+
+Variables passed to the scene: stop, line, mode (`METRO`, `TRAIN`, `TRAM`, `BUS`, `SHIP`),
+destination, platform, scheduled and expected times, minutes, delay; for a disruption, its summary
+and details (in Swedish). What is already there when the integration starts is not announced;
+cancellations and messages already announced are not announced again after a restart.
+
+## Scene actions
+
+**Read the next SL departures**: choose a stop, optionally a line. Outputs: a sentence
+(`Metro 17 to Åkeshov at Slussen: in 3 and 8 min`), the stop, line, destination, minutes to wait,
+minutes to the following one, delay, expected time, platform, real time (1/0), disruption (1/0). The
+sentence follows the language of the configuration.
+
+## Scene examples
+
+- **Leave for the metro**: trigger "Time to leave", stop Slussen (17), 7 min → send "Your metro
+  leaves in {{minutes}} min from platform {{platform}}" and blink the hall light.
+- **Morning briefing**: at 7:00 on weekdays, action "Read the next SL departures" → send its
+  sentence to the kitchen speaker.
+- **Warn of a cancelled bus**: trigger "Departure cancelled", stop T-Centralen (65) → send a
+  message with the destination and the scheduled time.
+
+## Data, refresh and quotas
+
+The SL APIs on Trafiklab are free and need no key. They answer `429 Quota has been exceeded` to
+bursts of requests: the integration reads the stops one after the other, at most once a minute,
+only for the devices created in Gladys, reads the traffic messages every 5 minutes and the list of
+stops (1.6 MB) only when you search or add a stop, kept for a day. Departures are SL's real time
+when the vehicle is tracked, else the timetable.
 
 ## Troubleshooting
 
-The integration logs everything it does: check the integration logs from the
-Gladys UI (or `docker logs` on the host) with `LOG_LEVEL=debug` for the full
-detail.
+- **No device in Discover**: add the stop first, with "Add a stop".
+- **"SL cannot be reached"**: the Gladys host has no internet access, SL is down, or its quota was
+  exceeded (HTTP 429). The integration retries at each refresh and says when it is back.
+- **A line filter is refused**: the answer lists the lines seen at the stop in the next 20 hours;
+  type the line as written there.
+- **Several stops share a name** (`Slussen` and `Slussen (ersättningstrafik)`, the replacement
+  service stop): use the number shown by "Find a stop".
+- **A trigger does not fire**: check the line (exact, upper case) and that the device exists in
+  Gladys: only created devices are read.
+
+## Limits
+
+- Developed without living in Stockholm, against the real SL API: feedback welcome.
+- Feature names are set when the device is created.
+- Traffic messages are in Swedish, never translated.
+- SL returns the next departures of each line and direction for the next 20 hours, not every one:
+  the widget and the countdowns show the first ones, which is what a board needs.
+- Only SL: no SJ long-distance trains, no other Swedish region.
+
+## Credits
+
+Data: SL, published on [Trafiklab](https://www.trafiklab.se/api/our-apis/sl/). Inspired by the
+community HASL integration for Home Assistant and by the `gladys-entur` integration.
