@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-20
+
 ### Added
 
 - A device per watched SL stop (optionally filtered by lines, direction or
@@ -23,3 +25,6 @@ the notes of the version's GitHub Release.
   disruption.
 - A scene action reading the next departures, with a sentence ready to send.
 - Texts and documentation in English, French, German and Spanish.
+
+[Unreleased]: https://github.com/guim31/gladys-sl-stockholm/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/guim31/gladys-sl-stockholm/releases/tag/v1.0.0
