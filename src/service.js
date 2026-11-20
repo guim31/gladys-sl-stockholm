@@ -78,12 +78,13 @@ export class SlService {
    * @param {object} options.store Store (src/store.js)
    * @param {typeof fetch} [options.fetch]
    * @param {() => number} [options.now]
+   * @param {(ms: number) => Promise<void>} [options.sleep]
    * @param {boolean} [options.timers] false in the tests: refresh by hand
    */
-  constructor({ gladys, store, fetch, now = Date.now, timers = true }) {
+  constructor({ gladys, store, fetch, now = Date.now, sleep, timers = true }) {
     this.gladys = gladys;
     this.store = store;
-    this.sl = new Sl({ fetch, now });
+    this.sl = new Sl({ fetch, now, sleep, cacheDir: store.directory });
     // The traffic messages of SL, read every MESSAGES_EVERY_MS.
     this.slMessages = { list: [], at: 0, failed: false };
     this.now = now;

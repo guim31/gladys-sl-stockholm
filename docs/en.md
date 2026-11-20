@@ -123,7 +123,8 @@ sentence follows the language of the configuration.
 The SL APIs on Trafiklab are free and need no key. They answer `429 Quota has been exceeded` to
 bursts of requests: the integration reads the stops one after the other, at most once a minute,
 only for the devices created in Gladys, reads the traffic messages every 5 minutes and the list of
-stops (1.6 MB) only when you search or add a stop, kept for a day. Departures are SL's real time
+stops (1.6 MB) only when you search or add a stop, kept for a week in `/data`. Requests are
+spaced, and a refused one is tried again twice. Departures are SL's real time
 when the vehicle is tracked, else the timetable.
 
 ## Troubleshooting

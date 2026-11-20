@@ -16,7 +16,7 @@ const logger = createLogger({ name: 'sl-app' });
 
 /**
  * @param {object} gladys GladysIntegration instance
- * @param {object} [options] test seams: store, fetch, now, timers, dataDir
+ * @param {object} [options] test seams: store, fetch, now, sleep, timers, dataDir
  */
 export function registerHandlers(gladys, options = {}) {
   const service = new SlService({
@@ -24,6 +24,7 @@ export function registerHandlers(gladys, options = {}) {
     store: options.store ?? new Store(options.dataDir),
     fetch: options.fetch,
     now: options.now,
+    sleep: options.sleep,
     timers: options.timers ?? true,
   });
 

@@ -127,7 +127,8 @@ espera, los minutos hasta la siguiente, el retraso, la hora prevista, el andén,
 Las API de SL en Trafiklab son gratuitas y sin clave. Responden `429 Quota has been exceeded` a las
 ráfagas de peticiones: la integración lee las paradas una tras otra, como mucho una vez por minuto,
 solo para los dispositivos creados en Gladys, lee los mensajes de tráfico cada 5 minutos y la lista
-de paradas (1,6 MB) solo cuando busca o añade una parada, guardada un día. Las salidas son el tiempo
+de paradas (1,6 MB) solo cuando busca o añade una parada, guardada una semana en `/data`. Las peticiones se
+espacian y una rechazada se reintenta dos veces. Las salidas son el tiempo
 real de SL cuando el vehículo está localizado; si no, el horario.
 
 ## Solución de problemas

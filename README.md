@@ -38,8 +38,9 @@ The user documentation is in [`docs/en.md`](docs/en.md) ([fr](docs/fr.md), [de](
 The integration reads `transport.integration.sl.se/v1/sites/{id}/departures` (20-hour window) for
 each created device, one after the other, every minute (or two), and the traffic messages of
 `deviations.integration.sl.se/v1/messages` every 5 minutes. The list of SL sites, used by the stop
-search, is read on demand and kept in memory for a day. SL answers bursts with HTTP 429: the
-integration never retries in a loop. Only `/data/watch.json` is written: the watched stops and the
+search, is read on demand and kept for a week in `/data`. SL answers bursts (and sometimes a lone
+request) with HTTP 429: requests are serialized and spaced, and a 429 is tried again twice, never
+in a loop. Only `/data/watch.json` is written: the watched stops and the
 cancellations and messages already announced.
 
 ## Limits

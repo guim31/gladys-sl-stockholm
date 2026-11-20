@@ -127,7 +127,7 @@ Les API SL de Trafiklab sont gratuites et sans clé. Elles répondent `429 Quota
 aux rafales de requêtes : l'intégration lit les arrêts l'un après l'autre, au plus une fois par
 minute, uniquement pour les appareils créés dans Gladys, lit les messages de trafic toutes les
 5 minutes et la liste des arrêts (1,6 Mo) seulement quand vous cherchez ou ajoutez un arrêt, gardée
-une journée. Les départs sont le temps réel de SL quand le véhicule est suivi, sinon l'horaire.
+une semaine dans `/data`. Les requêtes sont espacées, et une requête refusée est retentée deux fois. Les départs sont le temps réel de SL quand le véhicule est suivi, sinon l'horaire.
 
 ## Dépannage
 

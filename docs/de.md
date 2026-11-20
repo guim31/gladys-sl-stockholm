@@ -130,7 +130,8 @@ Störung (1/0). Der Satz folgt der Sprache der Konfiguration.
 Die SL-APIs auf Trafiklab sind kostenlos und ohne Schlüssel. Auf Anfragewellen antworten sie mit
 `429 Quota has been exceeded`: Die Integration liest die Haltestellen nacheinander, höchstens einmal
 pro Minute, nur für die in Gladys angelegten Geräte, die Verkehrsmeldungen alle 5 Minuten und die
-Haltestellenliste (1,6 MB) nur beim Suchen oder Hinzufügen, für einen Tag behalten. Die Abfahrten
+Haltestellenliste (1,6 MB) nur beim Suchen oder Hinzufügen, eine Woche in `/data` behalten. Die Anfragen werden
+gestaffelt, eine abgelehnte wird zweimal wiederholt. Die Abfahrten
 sind SLs Echtzeit, wenn das Fahrzeug verfolgt wird, sonst der Fahrplan.
 
 ## Fehlerbehebung

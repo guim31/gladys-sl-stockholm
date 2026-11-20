@@ -6,7 +6,7 @@
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { NO_DEPARTURE_MINUTES } from '../src/devices.js';
 import { MAX_WATCHES, MESSAGES_EVERY_MS, TRIGGERS } from '../src/service.js';
@@ -53,8 +53,13 @@ test('search: by name, alias or number; failures in red', async (t) => {
   assert.match(fr(await failedAction(world, 'search_stops', { query: ' ' })), /Saisissez/);
   // The site list is read once.
   assert.equal(world.network.calls.length, 1);
+  // SL refusing the list: the copy kept in /data answers.
   world.service.sl.sitesCache = null;
   world.network.fail = 429;
+  assert.match(fr(await action(world, 'search_stops', { query: 'TCE' })), /T-Centralen \[9001\]/);
+  // No copy at all: the failure is said, in red.
+  world.service.sl.sitesCache = null;
+  await rm(join(world.dataDir, 'sites.json'));
   assert.equal(
     fr(await failedAction(world, 'search_stops', { query: 'Slussen' })),
     'SL est injoignable (transport.integration.sl.se: HTTP 429 (quota)). Réessayez dans un instant.',

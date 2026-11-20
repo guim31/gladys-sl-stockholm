@@ -131,6 +131,8 @@ export async function createWorld({
     fetch: network.fetch,
     timers,
     now: clock.now,
+    // No real wait: the clock is manual.
+    sleep: async () => {},
     dataDir,
   });
   const world = {

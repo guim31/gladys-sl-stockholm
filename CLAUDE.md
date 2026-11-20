@@ -278,7 +278,10 @@ déclencheurs, un widget, une action de scène). Voir ses notes pour le fonction
 
 - `https://transport.integration.sl.se/v1/sites?expand=true` : les 6 500 sites SL (1,6 Mo) avec
   `alias`, `abbreviation` (`TCE`) et `stop_areas`. **429 « Quota has been exceeded »** dès la deuxième
-  lecture en quelques minutes : liste lue à la demande (recherche, ajout), gardée un jour en mémoire.
+  lecture en quelques minutes : liste lue à la demande (recherche, ajout), gardée un jour en mémoire et une semaine dans
+  `/data/sites.json` (servie périmée si SL refuse). Des 429 tombent aussi sur une requête isolée
+  (1 sur 6 le 20/11, espacées d'une seconde) : le client sérialise, espace de 500 ms et réessaie un 429
+  après 2 puis 5 s.
 - `/v1/sites/{id}/departures?forecast=1200` : `forecast` au plus 1200 (minutes), au-delà 400. SL ne
   renvoie **que les prochains départs de chaque ligne et sens** (~100 en tout), pas toute la fenêtre :
   un arrêt calme la nuit montre son premier départ du matin. Site inconnu : `200` et liste vide ; site

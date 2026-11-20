@@ -31,9 +31,9 @@ Gladys before reporting a problem.
 In scope: the code of this repository and the Docker image it publishes.
 
 The integration needs no account and stores no secret. It writes a single file,
-`/data/watch.json`: the watched stops and their filters, and the SL
+`/data/watch.json` (the watched stops and their filters, and the SL
 cancellations and traffic messages already announced to the scenes (forgotten
-after 48 hours). It only calls the public SL APIs
+after 48 hours)) and `/data/sites.json`, a copy of the public list of SL stops. It only calls the public SL APIs
 (`transport.integration.sl.se`, `deviations.integration.sl.se`) over HTTPS,
 and opens no port.
 
