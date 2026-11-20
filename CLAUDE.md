@@ -31,16 +31,24 @@ pushing.
 ## Architecture
 
 ```
-index.js                          SDK wiring only: handlers registered before connect()
-src/devices/index.js              registry of the device blueprints + dispatch helpers
-src/devices/<type>.js             one device type per file (buildDevice, onPoll, onSetValue...)
+index.js                          SDK wiring only: registerHandlers() then connect()
+src/app.js                        every SDK handler -> service; configuration actions
+src/service.js                    watch list, refresh timer, devices/states, scene triggers, actions
+src/sl.js                         SL client: site list (cached a day), departures, deviations
+src/departures.js                 SL answers -> departures (Stockholm times, delay, filters), messages
+src/devices.js                    Gladys device of a watched stop, its states
 src/scenes.js                     scene action handlers (manifest `scene_actions`)
 src/widgets.js                    dashboard widget handlers (manifest `widgets`)
+src/messages.js                   texts sent from the container (en, fr, de, es)
+src/errors.js                     ActionFailure: a failed action, shown in red by Gladys
+src/store.js                      /data/watch.json (atomic, coalesced writes)
 src/config.js                     DEFAULT_CONFIG (mirrors the manifest defaults) + normalization
-src/weather.js                    example driver (Open-Meteo)
-gladys-assistant-integration.json manifest: name, config_schema, actions, image...
-docs/en.md, docs/fr.md            user documentation, re-hosted by Gladys (mandatory)
+gladys-assistant-integration.json manifest: config, actions, widget, scene triggers and action
+docs/{en,fr,de,es}.md             user documentation, re-hosted by Gladys (en and fr mandatory)
 test/                             node --test, against the SDK's fake Gladys (integration-sdk/testing)
+test/helpers/world.js             fake Gladys + fake SL on the fixtures + manual clock + /data
+test/helpers/scenario.js          cancellation, delay and disruption staged on the real departures
+test/fixtures/sl                  real SL answers of 20/11/2026 ~09:37 (Slussen, T-Centralen, Styrsvik)
 .github/scripts/release.mjs       release helpers (manifest bump, changelog), tested in test/
 ```
 
@@ -78,8 +86,9 @@ test/                             node --test, against the SDK's fake Gladys (in
   `type: "provider"`: 5.1.0). `test/manifest.test.js` ties the manifest to the
   code (defaults, action, scene and widget handlers): change both sides
   together.
-- **User-facing text** is bilingual (English and French): action messages,
-  manifest texts, and `docs/en.md` / `docs/fr.md`, kept in sync.
+- **User-facing text** is in four languages (English, French, German with
+  "du", Spanish with "usted"): action messages, manifest texts, feature names
+  and `docs/{en,fr,de,es}.md`, kept in sync (`test/i18n.test.js`).
 - **Style.** Prettier formats, ESLint catches mistakes. Comments explain why,
   in English. Tests never touch the network.
 
@@ -259,3 +268,46 @@ long, et sur un « Sie »/« Ihr… » de politesse en allemand. Le store exige 
 - Docs `en`, `fr`, `de`, `es` avec les mêmes sections.
 - Chauffe, ouverture, sécurité : ne rien rendre pilotable « comme un thermostat » ou par un assistant
   vocal quand une erreur serait dangereuse (leçon d'OctoPrint).
+
+# Intégration SL Stockholm (notes de développement, 20/11/2026)
+
+Structure reprise de `gladys-entur` (même forme : un appareil par arrêt et jeu de filtres, quatre
+déclencheurs, un widget, une action de scène). Voir ses notes pour le fonctionnement des seuils.
+
+## API (Trafiklab, sans clé, vérifiées le 20/11/2026)
+
+- `https://transport.integration.sl.se/v1/sites?expand=true` : les 6 500 sites SL (1,6 Mo) avec
+  `alias`, `abbreviation` (`TCE`) et `stop_areas`. **429 « Quota has been exceeded »** dès la deuxième
+  lecture en quelques minutes : liste lue à la demande (recherche, ajout), gardée un jour en mémoire et une semaine dans
+  `/data/sites.json` (servie périmée si SL refuse). Des 429 tombent aussi sur une requête isolée
+  (1 sur 6 le 20/11, espacées d'une seconde) : le client sérialise, espace de 500 ms et réessaie un 429
+  après 2 puis 5 s.
+- `/v1/sites/{id}/departures?forecast=1200` : `forecast` au plus 1200 (minutes), au-delà 400. SL ne
+  renvoie **que les prochains départs de chaque ligne et sens** (~100 en tout), pas toute la fenêtre :
+  un arrêt calme la nuit montre son premier départ du matin. Site inconnu : `200` et liste vide ; site
+  non numérique : 500. Filtres : `transport` (METRO, TRAIN, TRAM, BUS, SHIP, FERRY, TAXI), `line`
+  (**id** de ligne, **non répétable** : 400), `direction` (1/2). Une seule ligne est filtrée par SL,
+  plusieurs ici.
+- **Heures sans fuseau** (`2026-11-20T09:32:10`, heure de Stockholm) : `parseSlTime` les convertit
+  (deux passes pour le changement d'heure). L'API des perturbations, elle, donne l'offset.
+- `state` : `EXPECTED`, `ATSTOP`, `CANCELLED`… ; une suppression porte aussi
+  `deviations: [{ consequence: "CANCELLED" }]`. `display` vaut `"3 min"`/`"Nu"` en temps réel, une heure
+  sinon.
+- **L'id de ligne n'est pas unique** : métro 17 et bateau 17 (Waxholmsbolaget, autorité 8), `43` et
+  `43X` partagent l'id 43. Les lignes se comparent en `MODE:id` (`lineRefs`) pour les messages, en
+  désignation pour le filtre.
+- `https://deviations.integration.sl.se/v1/messages?future=false` : ~170 messages (~230 ko),
+  **en suédois seulement**, lus toutes les 5 minutes pour tous les arrêts. Ascenseurs et entrées
+  fermés : importance 2, écartés (seuil 3). Un message compte s'il nomme un `stop_area` du site (liste
+  du site) ou, avec un filtre de ligne, une ligne suivie ; sans filtre, un message de ligne ne compte
+  que s'il ne nomme aucun arrêt ou nomme celui-ci.
+
+## Choix
+
+- Actions de configuration : tout échec **lève** `ActionFailure` (rouge), les vrais succès sont
+  renvoyés (vert), règle du 16/11.
+- Au plus 10 arrêts, une requête par arrêt, l'une après l'autre ; intervalle 1 ou 2 min. Un arrêt en
+  échec garde son dernier tableau (comptes à rebours vieillis), le statut ne passe hors ligne que si
+  tous échouent.
+- Les lignes demandées sont vérifiées sur les départs des 20 prochaines heures (l'API n'a pas de
+  liste des lignes d'un arrêt).

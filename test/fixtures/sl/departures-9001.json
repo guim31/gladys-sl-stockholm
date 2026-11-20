@@ -1,0 +1,3400 @@
+{
+  "departures": [
+    {
+      "destination": "Vällingby",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "CANCELLED",
+      "display": "09:33",
+      "scheduled": "2026-11-20T09:33:10",
+      "expected": "2026-11-20T09:33:38",
+      "journey": {
+        "id": 2026112080032,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": [
+        {
+          "importance_level": 7,
+          "consequence": "CANCELLED",
+          "message": "Inställd"
+        }
+      ]
+    },
+    {
+      "destination": "Skarpnäck",
+      "direction_code": 2,
+      "direction": "Skarpnäck",
+      "state": "CANCELLED",
+      "display": "09:35",
+      "scheduled": "2026-11-20T09:35:56",
+      "expected": "2026-11-20T09:37:11",
+      "journey": {
+        "id": 2026112080031,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": [
+        {
+          "importance_level": 7,
+          "consequence": "CANCELLED",
+          "message": "Inställd"
+        }
+      ]
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "ATSTOP",
+      "display": "Nu",
+      "scheduled": "2026-11-20T09:36:30",
+      "expected": "2026-11-20T09:37:49",
+      "journey": {
+        "id": 2026112032162,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Waldemarsudde",
+      "direction_code": 1,
+      "direction": "Waldemarsudde",
+      "state": "ATSTOP",
+      "display": "Nu",
+      "scheduled": "2026-11-20T09:38:00",
+      "expected": "2026-11-20T09:38:00",
+      "journey": {
+        "id": 2026112001407,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 4301,
+        "name": "T-Centralen",
+        "type": "TRAMSTN"
+      },
+      "stop_point": {
+        "id": 4300,
+        "name": "T-Centralen"
+      },
+      "line": {
+        "id": 7,
+        "designation": "7",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAM",
+        "group_of_lines": "Spårväg City"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Uppsala C",
+      "direction_code": 2,
+      "direction": "Uppsala C",
+      "state": "ATSTOP",
+      "display": "Nu",
+      "scheduled": "2026-11-20T09:38:00",
+      "expected": "2026-11-20T09:38:00",
+      "journey": {
+        "id": 2026112002222,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hässelby strand",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "ATSTOP",
+      "display": "Nu",
+      "scheduled": "2026-11-20T09:36:54",
+      "expected": "2026-11-20T09:38:09",
+      "journey": {
+        "id": 2026112012396,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Liljeholmen",
+      "direction_code": 2,
+      "direction": "Fruängen",
+      "state": "ATSTOP",
+      "display": "Nu",
+      "scheduled": "2026-11-20T09:37:06",
+      "expected": "2026-11-20T09:38:22",
+      "journey": {
+        "id": 2026112022254,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hornsberg",
+      "via": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "1 min",
+      "scheduled": "2026-11-20T09:38:41",
+      "expected": "2026-11-20T09:39:40",
+      "journey": {
+        "id": 2026112002363,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Axelsberg",
+      "direction_code": 2,
+      "direction": "Norsborg",
+      "state": "EXPECTED",
+      "display": "1 min",
+      "scheduled": "2026-11-20T09:39:36",
+      "expected": "2026-11-20T09:40:07",
+      "journey": {
+        "id": 2026112022266,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Vällingby",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "1 min",
+      "scheduled": "2026-11-20T09:39:24",
+      "expected": "2026-11-20T09:40:14",
+      "journey": {
+        "id": 2026112012406,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hjulsta",
+      "direction_code": 1,
+      "direction": "Hjulsta",
+      "state": "EXPECTED",
+      "display": "2 min",
+      "scheduled": "2026-11-20T09:40:30",
+      "expected": "2026-11-20T09:40:30",
+      "journey": {
+        "id": 2026112032175,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "EXPECTED",
+      "display": "2 min",
+      "scheduled": "2026-11-20T09:40:30",
+      "expected": "2026-11-20T09:40:30",
+      "journey": {
+        "id": 2026112032164,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hagsätra",
+      "direction_code": 2,
+      "direction": "Hagsätra",
+      "state": "CANCELLED",
+      "display": "09:40",
+      "scheduled": "2026-11-20T09:40:38",
+      "expected": "2026-11-20T09:40:59",
+      "journey": {
+        "id": 2026112080035,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": [
+        {
+          "importance_level": 7,
+          "consequence": "CANCELLED",
+          "message": "Inställd"
+        }
+      ]
+    },
+    {
+      "destination": "Skarpnäck",
+      "direction_code": 2,
+      "direction": "Skarpnäck",
+      "state": "EXPECTED",
+      "display": "2 min",
+      "scheduled": "2026-11-20T09:38:12",
+      "expected": "2026-11-20T09:41:00",
+      "journey": {
+        "id": 2026112012412,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsängen",
+      "direction_code": 2,
+      "direction": "Bålsta",
+      "state": "ATSTOP",
+      "display": "2 min",
+      "scheduled": "2026-11-20T09:41:00",
+      "expected": "2026-11-20T09:41:00",
+      "journey": {
+        "id": 2026112002822,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "designation": "1"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Ropsten",
+      "direction_code": 1,
+      "direction": "Ropsten",
+      "state": "EXPECTED",
+      "display": "3 min",
+      "scheduled": "2026-11-20T09:40:18",
+      "expected": "2026-11-20T09:41:23",
+      "journey": {
+        "id": 2026112022232,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Åkeshov",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "3 min",
+      "scheduled": "2026-11-20T09:41:54",
+      "expected": "2026-11-20T09:41:54",
+      "journey": {
+        "id": 2026112012404,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Fruängen",
+      "direction_code": 2,
+      "direction": "Fruängen",
+      "state": "EXPECTED",
+      "display": "4 min",
+      "scheduled": "2026-11-20T09:42:06",
+      "expected": "2026-11-20T09:42:41",
+      "journey": {
+        "id": 2026112022261,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mörby centrum",
+      "direction_code": 1,
+      "direction": "Mörby centrum",
+      "state": "EXPECTED",
+      "display": "4 min",
+      "scheduled": "2026-11-20T09:42:48",
+      "expected": "2026-11-20T09:42:48",
+      "journey": {
+        "id": 2026112022262,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "EXPECTED",
+      "display": "5 min",
+      "scheduled": "2026-11-20T09:44:00",
+      "expected": "2026-11-20T09:44:00",
+      "journey": {
+        "id": 2026112032166,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Akalla",
+      "direction_code": 1,
+      "direction": "Akalla",
+      "state": "EXPECTED",
+      "display": "5 min",
+      "scheduled": "2026-11-20T09:44:12",
+      "expected": "2026-11-20T09:44:12",
+      "journey": {
+        "id": 2026112032176,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Norsborg",
+      "direction_code": 2,
+      "direction": "Norsborg",
+      "state": "EXPECTED",
+      "display": "6 min",
+      "scheduled": "2026-11-20T09:44:36",
+      "expected": "2026-11-20T09:44:37",
+      "journey": {
+        "id": 2026112022273,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Farsta strand",
+      "direction_code": 2,
+      "direction": "Farsta strand",
+      "state": "EXPECTED",
+      "display": "6 min",
+      "scheduled": "2026-11-20T09:40:42",
+      "expected": "2026-11-20T09:44:48",
+      "journey": {
+        "id": 2026112012407,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Waldemarsudde",
+      "direction_code": 1,
+      "direction": "Waldemarsudde",
+      "state": "EXPECTED",
+      "display": "6 min",
+      "scheduled": "2026-11-20T09:45:00",
+      "expected": "2026-11-20T09:45:00",
+      "journey": {
+        "id": 2026112001509,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 4301,
+        "name": "T-Centralen",
+        "type": "TRAMSTN"
+      },
+      "stop_point": {
+        "id": 4300,
+        "name": "T-Centralen"
+      },
+      "line": {
+        "id": 7,
+        "designation": "7",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAM",
+        "group_of_lines": "Spårväg City"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Märsta",
+      "direction_code": 2,
+      "direction": "Märsta",
+      "state": "EXPECTED",
+      "display": "6 min",
+      "scheduled": "2026-11-20T09:45:00",
+      "expected": "2026-11-20T09:45:00",
+      "journey": {
+        "id": 2026112002722,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hässelby strand",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "6 min",
+      "scheduled": "2026-11-20T09:44:24",
+      "expected": "2026-11-20T09:45:01",
+      "journey": {
+        "id": 2026112012408,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hagsätra",
+      "direction_code": 2,
+      "direction": "Hagsätra",
+      "state": "EXPECTED",
+      "display": "7 min",
+      "scheduled": "2026-11-20T09:43:12",
+      "expected": "2026-11-20T09:45:51",
+      "journey": {
+        "id": 2026112012420,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Djurgårdsbrunn",
+      "direction_code": 1,
+      "direction": "Djurgårdsbrunn",
+      "state": "EXPECTED",
+      "display": "7 min",
+      "scheduled": "2026-11-20T09:46:09",
+      "expected": "2026-11-20T09:46:09",
+      "journey": {
+        "id": 2026112002710,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Farsta strand",
+      "direction_code": 2,
+      "direction": "Farsta strand",
+      "state": "CANCELLED",
+      "display": "09:45",
+      "scheduled": "2026-11-20T09:45:28",
+      "expected": "2026-11-20T09:46:32",
+      "journey": {
+        "id": 2026112080033,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": [
+        {
+          "importance_level": 7,
+          "consequence": "CANCELLED",
+          "message": "Inställd"
+        }
+      ]
+    },
+    {
+      "destination": "Skarpnäck",
+      "direction_code": 2,
+      "direction": "Skarpnäck",
+      "state": "EXPECTED",
+      "display": "8 min",
+      "scheduled": "2026-11-20T09:45:42",
+      "expected": "2026-11-20T09:46:53",
+      "journey": {
+        "id": 2026112012394,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Vällingby",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "8 min",
+      "scheduled": "2026-11-20T09:46:54",
+      "expected": "2026-11-20T09:46:54",
+      "journey": {
+        "id": 2026112012416,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Södertälje centrum",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "8 min",
+      "scheduled": "2026-11-20T09:47:00",
+      "expected": "2026-11-20T09:47:00",
+      "journey": {
+        "id": 2026112002623,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Liljeholmen",
+      "direction_code": 2,
+      "direction": "Fruängen",
+      "state": "EXPECTED",
+      "display": "8 min",
+      "scheduled": "2026-11-20T09:47:06",
+      "expected": "2026-11-20T09:47:06",
+      "journey": {
+        "id": 2026112022267,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "8 min",
+      "scheduled": "2026-11-20T09:46:52",
+      "expected": "2026-11-20T09:47:12",
+      "journey": {
+        "id": 2026112002757,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mörby centrum",
+      "direction_code": 1,
+      "direction": "Mörby centrum",
+      "state": "EXPECTED",
+      "display": "9 min",
+      "scheduled": "2026-11-20T09:47:48",
+      "expected": "2026-11-20T09:47:59",
+      "journey": {
+        "id": 2026112022263,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hjulsta",
+      "direction_code": 1,
+      "direction": "Hjulsta",
+      "state": "EXPECTED",
+      "display": "9 min",
+      "scheduled": "2026-11-20T09:48:00",
+      "expected": "2026-11-20T09:48:00",
+      "journey": {
+        "id": 2026112032178,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "EXPECTED",
+      "display": "9 min",
+      "scheduled": "2026-11-20T09:48:00",
+      "expected": "2026-11-20T09:48:00",
+      "journey": {
+        "id": 2026112032168,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kallhäll",
+      "direction_code": 2,
+      "direction": "Bålsta",
+      "state": "EXPECTED",
+      "display": "9 min",
+      "scheduled": "2026-11-20T09:48:00",
+      "expected": "2026-11-20T09:48:00",
+      "journey": {
+        "id": 2026112002322,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "designation": "1"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43X",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Alvik",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "11 min",
+      "scheduled": "2026-11-20T09:49:24",
+      "expected": "2026-11-20T09:49:24",
+      "journey": {
+        "id": 2026112012414,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Farsta strand",
+      "direction_code": 2,
+      "direction": "Farsta strand",
+      "state": "EXPECTED",
+      "display": "11 min",
+      "scheduled": "2026-11-20T09:48:12",
+      "expected": "2026-11-20T09:49:29",
+      "journey": {
+        "id": 2026112012417,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 18,
+        "designation": "18",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Axelsberg",
+      "direction_code": 2,
+      "direction": "Norsborg",
+      "state": "EXPECTED",
+      "display": "11 min",
+      "scheduled": "2026-11-20T09:49:36",
+      "expected": "2026-11-20T09:49:37",
+      "journey": {
+        "id": 2026112022280,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2052,
+        "name": "T-Centralen",
+        "designation": "2"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Ropsten",
+      "direction_code": 1,
+      "direction": "Ropsten",
+      "state": "EXPECTED",
+      "display": "11 min",
+      "scheduled": "2026-11-20T09:50:18",
+      "expected": "2026-11-20T09:50:18",
+      "journey": {
+        "id": 2026112022243,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Västerhaninge",
+      "direction_code": 1,
+      "direction": "Nynäshamn",
+      "state": "EXPECTED",
+      "display": "12 min",
+      "scheduled": "2026-11-20T09:51:00",
+      "expected": "2026-11-20T09:51:00",
+      "journey": {
+        "id": 2026112002823,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5313,
+        "name": "Stockholm City",
+        "designation": "4"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "EXPECTED",
+      "display": "13 min",
+      "scheduled": "2026-11-20T09:51:30",
+      "expected": "2026-11-20T09:51:30",
+      "journey": {
+        "id": 2026112032170,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Akalla",
+      "direction_code": 1,
+      "direction": "Akalla",
+      "state": "EXPECTED",
+      "display": "13 min",
+      "scheduled": "2026-11-20T09:51:42",
+      "expected": "2026-11-20T09:51:42",
+      "journey": {
+        "id": 2026112032180,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hagsätra",
+      "direction_code": 2,
+      "direction": "Hagsätra",
+      "state": "EXPECTED",
+      "display": "13 min",
+      "scheduled": "2026-11-20T09:50:42",
+      "expected": "2026-11-20T09:52:09",
+      "journey": {
+        "id": 2026112012402,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1052,
+        "name": "T-Centralen",
+        "designation": "4"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hässelby strand",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "14 min",
+      "scheduled": "2026-11-20T09:51:54",
+      "expected": "2026-11-20T09:52:22",
+      "journey": {
+        "id": 2026112012418,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 19,
+        "designation": "19",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mörby centrum",
+      "direction_code": 1,
+      "direction": "Mörby centrum",
+      "state": "EXPECTED",
+      "display": "14 min",
+      "scheduled": "2026-11-20T09:52:48",
+      "expected": "2026-11-20T09:52:48",
+      "journey": {
+        "id": 2026112022277,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 14,
+        "designation": "14",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Waldemarsudde",
+      "direction_code": 1,
+      "direction": "Waldemarsudde",
+      "state": "EXPECTED",
+      "display": "14 min",
+      "scheduled": "2026-11-20T09:53:00",
+      "expected": "2026-11-20T09:53:00",
+      "journey": {
+        "id": 2026112001015,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 4301,
+        "name": "T-Centralen",
+        "type": "TRAMSTN"
+      },
+      "stop_point": {
+        "id": 4300,
+        "name": "T-Centralen"
+      },
+      "line": {
+        "id": 7,
+        "designation": "7",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAM",
+        "group_of_lines": "Spårväg City"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tumba",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "15 min",
+      "scheduled": "2026-11-20T09:54:00",
+      "expected": "2026-11-20T09:54:00",
+      "journey": {
+        "id": 2026112002223,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Skeppsholmen",
+      "direction_code": 1,
+      "direction": "Skeppsholmen",
+      "state": "EXPECTED",
+      "display": "16 min",
+      "scheduled": "2026-11-20T09:51:56",
+      "expected": "2026-11-20T09:54:22",
+      "journey": {
+        "id": 2026112002320,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Åkeshov",
+      "direction_code": 1,
+      "direction": "Hässelby strand",
+      "state": "EXPECTED",
+      "display": "16 min",
+      "scheduled": "2026-11-20T09:54:24",
+      "expected": "2026-11-20T09:54:24",
+      "journey": {
+        "id": 2026112012425,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 2051,
+        "name": "T-Centralen",
+        "designation": "1"
+      },
+      "line": {
+        "id": 17,
+        "designation": "17",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans gröna linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hjulsta",
+      "direction_code": 1,
+      "direction": "Hjulsta",
+      "state": "EXPECTED",
+      "display": "17 min",
+      "scheduled": "2026-11-20T09:55:30",
+      "expected": "2026-11-20T09:55:30",
+      "journey": {
+        "id": 2026112032182,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 10,
+        "designation": "10",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Kungsträdgården",
+      "direction_code": 2,
+      "direction": "Kungsträdgården",
+      "state": "EXPECTED",
+      "display": "17 min",
+      "scheduled": "2026-11-20T09:55:30",
+      "expected": "2026-11-20T09:55:30",
+      "journey": {
+        "id": 2026112032172,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3052,
+        "name": "T-Centralen",
+        "designation": "6"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Bålsta",
+      "direction_code": 2,
+      "direction": "Bålsta",
+      "state": "EXPECTED",
+      "display": "17 min",
+      "scheduled": "2026-11-20T09:56:00",
+      "expected": "2026-11-20T09:56:00",
+      "journey": {
+        "id": 2026112002522,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "designation": "1"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nynäshamn",
+      "direction_code": 1,
+      "direction": "Nynäshamn",
+      "state": "EXPECTED",
+      "display": "20 min",
+      "scheduled": "2026-11-20T09:59:00",
+      "expected": "2026-11-20T09:59:00",
+      "journey": {
+        "id": 2026112002323,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5313,
+        "name": "Stockholm City",
+        "designation": "4"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43X",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Akalla",
+      "direction_code": 1,
+      "direction": "Akalla",
+      "state": "EXPECTED",
+      "display": "20 min",
+      "scheduled": "2026-11-20T09:59:12",
+      "expected": "2026-11-20T09:59:12",
+      "journey": {
+        "id": 2026112032184,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 3051,
+        "name": "T-Centralen",
+        "designation": "5"
+      },
+      "line": {
+        "id": 11,
+        "designation": "11",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans blå linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hornsberg",
+      "via": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "21 min",
+      "scheduled": "2026-11-20T09:58:41",
+      "expected": "2026-11-20T09:59:40",
+      "journey": {
+        "id": 2026112002364,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Märsta",
+      "direction_code": 2,
+      "direction": "Märsta",
+      "state": "EXPECTED",
+      "display": "21 min",
+      "scheduled": "2026-11-20T10:00:00",
+      "expected": "2026-11-20T10:00:00",
+      "journey": {
+        "id": 2026112002624,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Ropsten",
+      "direction_code": 1,
+      "direction": "Ropsten",
+      "state": "EXPECTED",
+      "display": "21 min",
+      "scheduled": "2026-11-20T10:00:12",
+      "expected": "2026-11-20T10:00:12",
+      "journey": {
+        "id": 2026112022255,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "type": "METROSTN"
+      },
+      "stop_point": {
+        "id": 1051,
+        "name": "T-Centralen",
+        "designation": "3"
+      },
+      "line": {
+        "id": 13,
+        "designation": "13",
+        "transport_authority_id": 1,
+        "transport_mode": "METRO",
+        "group_of_lines": "Tunnelbanans röda linje"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Djurgårdsbrunn",
+      "direction_code": 1,
+      "direction": "Djurgårdsbrunn",
+      "state": "EXPECTED",
+      "display": "22 min",
+      "scheduled": "2026-11-20T10:01:09",
+      "expected": "2026-11-20T10:01:09",
+      "journey": {
+        "id": 2026112002711,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Södertälje centrum",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "23 min",
+      "scheduled": "2026-11-20T10:02:00",
+      "expected": "2026-11-20T10:02:00",
+      "journey": {
+        "id": 2026112002725,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Västerhaninge",
+      "direction_code": 1,
+      "direction": "Nynäshamn",
+      "state": "EXPECTED",
+      "display": "27 min",
+      "scheduled": "2026-11-20T10:06:00",
+      "expected": "2026-11-20T10:06:00",
+      "journey": {
+        "id": 2026112002525,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5313,
+        "name": "Stockholm City",
+        "designation": "4"
+      },
+      "line": {
+        "id": 43,
+        "designation": "43",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "28 min",
+      "scheduled": "2026-11-20T10:06:52",
+      "expected": "2026-11-20T10:06:52",
+      "journey": {
+        "id": 2026112002758,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Uppsala C",
+      "direction_code": 2,
+      "direction": "Uppsala C",
+      "state": "EXPECTED",
+      "display": "29 min",
+      "scheduled": "2026-11-20T10:08:00",
+      "expected": "2026-11-20T10:08:00",
+      "journey": {
+        "id": 2026112002224,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Skeppsholmen",
+      "direction_code": 1,
+      "direction": "Skeppsholmen",
+      "state": "EXPECTED",
+      "display": "10:11",
+      "scheduled": "2026-11-20T10:11:56",
+      "expected": "2026-11-20T10:11:56",
+      "journey": {
+        "id": 2026112002321,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Märsta",
+      "direction_code": 2,
+      "direction": "Märsta",
+      "state": "EXPECTED",
+      "display": "10:15",
+      "scheduled": "2026-11-20T10:15:00",
+      "expected": "2026-11-20T10:15:00",
+      "journey": {
+        "id": 2026112002724,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Södertälje centrum",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "10:17",
+      "scheduled": "2026-11-20T10:17:00",
+      "expected": "2026-11-20T10:17:00",
+      "journey": {
+        "id": 2026112002625,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 41,
+        "designation": "41",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hornsberg",
+      "via": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "10:18",
+      "scheduled": "2026-11-20T10:18:41",
+      "expected": "2026-11-20T10:18:41",
+      "journey": {
+        "id": 2026112002365,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Djurgårdsbrunn",
+      "direction_code": 1,
+      "direction": "Djurgårdsbrunn",
+      "state": "EXPECTED",
+      "display": "10:21",
+      "scheduled": "2026-11-20T10:21:09",
+      "expected": "2026-11-20T10:21:09",
+      "journey": {
+        "id": 2026112002712,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Centralen",
+      "direction_code": 2,
+      "direction": "Centralen",
+      "state": "EXPECTED",
+      "display": "10:21",
+      "scheduled": "2026-11-20T10:21:52",
+      "expected": "2026-11-20T10:21:52",
+      "journey": {
+        "id": 2026112002759,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10526,
+        "name": "T-Centralen",
+        "designation": "M"
+      },
+      "line": {
+        "id": 69,
+        "designation": "69",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tumba",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "10:24",
+      "scheduled": "2026-11-20T10:24:00",
+      "expected": "2026-11-20T10:24:00",
+      "journey": {
+        "id": 2026112002225,
+        "state": "NORMALPROGRESS",
+        "prediction_state": "NORMAL"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Skeppsholmen",
+      "direction_code": 1,
+      "direction": "Skeppsholmen",
+      "state": "EXPECTED",
+      "display": "10:31",
+      "scheduled": "2026-11-20T10:31:56",
+      "expected": "2026-11-20T10:31:56",
+      "journey": {
+        "id": 2026112002322,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10291,
+        "name": "T-Centralen",
+        "designation": "N"
+      },
+      "line": {
+        "id": 65,
+        "designation": "65",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Uppsala C",
+      "direction_code": 2,
+      "direction": "Uppsala C",
+      "state": "EXPECTED",
+      "display": "10:38",
+      "scheduled": "2026-11-20T10:38:00",
+      "expected": "2026-11-20T10:38:00",
+      "journey": {
+        "id": 2026112002226,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5312,
+        "name": "Stockholm City",
+        "designation": "2"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tumba",
+      "direction_code": 1,
+      "direction": "Södertälje centrum",
+      "state": "EXPECTED",
+      "display": "10:54",
+      "scheduled": "2026-11-20T10:54:00",
+      "expected": "2026-11-20T10:54:00",
+      "journey": {
+        "id": 2026112002227,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5311,
+        "name": "Stockholm City",
+        "designation": "3"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tyresö kyrka",
+      "direction_code": 1,
+      "direction": "Tyresö kyrka",
+      "state": "EXPECTED",
+      "display": "15:00",
+      "scheduled": "2026-11-20T15:00:00",
+      "expected": "2026-11-20T15:00:00",
+      "journey": {
+        "id": 2026112022269,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 815,
+        "designation": "815C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Boo backe",
+      "direction_code": 1,
+      "direction": "Orminge centrum",
+      "state": "EXPECTED",
+      "display": "15:03",
+      "scheduled": "2026-11-20T15:03:00",
+      "expected": "2026-11-20T15:03:00",
+      "journey": {
+        "id": 2026112001001,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 442,
+        "designation": "442C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyfors",
+      "direction_code": 1,
+      "direction": "Nyfors",
+      "state": "EXPECTED",
+      "display": "15:10",
+      "scheduled": "2026-11-20T15:10:00",
+      "expected": "2026-11-20T15:10:00",
+      "journey": {
+        "id": 2026112022270,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 813,
+        "designation": "813C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Brandbergens centrum",
+      "direction_code": 1,
+      "direction": "Brandbergens centrum",
+      "state": "EXPECTED",
+      "display": "15:10",
+      "scheduled": "2026-11-20T15:10:00",
+      "expected": "2026-11-20T15:10:00",
+      "journey": {
+        "id": 2026112000001,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 818,
+        "designation": "818C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tyresö kyrka",
+      "direction_code": 1,
+      "direction": "Tyresö kyrka",
+      "state": "EXPECTED",
+      "display": "15:15",
+      "scheduled": "2026-11-20T15:15:00",
+      "expected": "2026-11-20T15:15:00",
+      "journey": {
+        "id": 2026112022271,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 815,
+        "designation": "815C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Boo backe",
+      "direction_code": 1,
+      "direction": "Orminge centrum",
+      "state": "EXPECTED",
+      "display": "15:18",
+      "scheduled": "2026-11-20T15:18:00",
+      "expected": "2026-11-20T15:18:00",
+      "journey": {
+        "id": 2026112001003,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 442,
+        "designation": "442C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyboda skola",
+      "direction_code": 1,
+      "direction": "Tyresö centrum",
+      "state": "EXPECTED",
+      "display": "15:20",
+      "scheduled": "2026-11-20T15:20:00",
+      "expected": "2026-11-20T15:20:00",
+      "journey": {
+        "id": 2026112024232,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 812,
+        "designation": "812C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Svartbäcken",
+      "direction_code": 1,
+      "direction": "Svartbäcken",
+      "state": "EXPECTED",
+      "display": "15:20",
+      "scheduled": "2026-11-20T15:20:00",
+      "expected": "2026-11-20T15:20:00",
+      "journey": {
+        "id": 2026112000101,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 809,
+        "designation": "809C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyfors",
+      "direction_code": 1,
+      "direction": "Nyfors",
+      "state": "EXPECTED",
+      "display": "15:25",
+      "scheduled": "2026-11-20T15:25:00",
+      "expected": "2026-11-20T15:25:00",
+      "journey": {
+        "id": 2026112022273,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 813,
+        "designation": "813C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Brandbergens centrum",
+      "direction_code": 1,
+      "direction": "Brandbergens centrum",
+      "state": "EXPECTED",
+      "display": "15:25",
+      "scheduled": "2026-11-20T15:25:00",
+      "expected": "2026-11-20T15:25:00",
+      "journey": {
+        "id": 2026112000003,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 818,
+        "designation": "818C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Tyresö kyrka",
+      "direction_code": 1,
+      "direction": "Tyresö kyrka",
+      "state": "EXPECTED",
+      "display": "15:30",
+      "scheduled": "2026-11-20T15:30:00",
+      "expected": "2026-11-20T15:30:00",
+      "journey": {
+        "id": 2026112022274,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 815,
+        "designation": "815C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Boo backe",
+      "direction_code": 1,
+      "direction": "Orminge centrum",
+      "state": "EXPECTED",
+      "display": "15:33",
+      "scheduled": "2026-11-20T15:33:00",
+      "expected": "2026-11-20T15:33:00",
+      "journey": {
+        "id": 2026112001005,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 442,
+        "designation": "442C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyboda skola",
+      "direction_code": 1,
+      "direction": "Tyresö centrum",
+      "state": "EXPECTED",
+      "display": "15:35",
+      "scheduled": "2026-11-20T15:35:00",
+      "expected": "2026-11-20T15:35:00",
+      "journey": {
+        "id": 2026112024233,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 812,
+        "designation": "812C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Svartbäcken",
+      "direction_code": 1,
+      "direction": "Svartbäcken",
+      "state": "EXPECTED",
+      "display": "15:35",
+      "scheduled": "2026-11-20T15:35:00",
+      "expected": "2026-11-20T15:35:00",
+      "journey": {
+        "id": 2026112000103,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 809,
+        "designation": "809C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyfors",
+      "direction_code": 1,
+      "direction": "Nyfors",
+      "state": "EXPECTED",
+      "display": "15:40",
+      "scheduled": "2026-11-20T15:40:00",
+      "expected": "2026-11-20T15:40:00",
+      "journey": {
+        "id": 2026112022276,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 813,
+        "designation": "813C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Brandbergens centrum",
+      "direction_code": 1,
+      "direction": "Brandbergens centrum",
+      "state": "EXPECTED",
+      "display": "15:40",
+      "scheduled": "2026-11-20T15:40:00",
+      "expected": "2026-11-20T15:40:00",
+      "journey": {
+        "id": 2026112000005,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 818,
+        "designation": "818C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Nyboda skola",
+      "direction_code": 1,
+      "direction": "Tyresö centrum",
+      "state": "EXPECTED",
+      "display": "15:50",
+      "scheduled": "2026-11-20T15:50:00",
+      "expected": "2026-11-20T15:50:00",
+      "journey": {
+        "id": 2026112024234,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "designation": "H"
+      },
+      "line": {
+        "id": 812,
+        "designation": "812C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Svartbäcken",
+      "direction_code": 1,
+      "direction": "Svartbäcken",
+      "state": "EXPECTED",
+      "display": "15:50",
+      "scheduled": "2026-11-20T15:50:00",
+      "expected": "2026-11-20T15:50:00",
+      "journey": {
+        "id": 2026112000105,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 80055,
+        "name": "Vattugatan",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 80200,
+        "name": "Vattugatan",
+        "designation": "I"
+      },
+      "line": {
+        "id": 809,
+        "designation": "809C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Östra Orminge",
+      "direction_code": 1,
+      "direction": "Insjön",
+      "state": "EXPECTED",
+      "display": "16:00",
+      "scheduled": "2026-11-20T16:00:00",
+      "expected": "2026-11-20T16:00:00",
+      "journey": {
+        "id": 2026112001001,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 445,
+        "designation": "445C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hemmesta",
+      "direction_code": 1,
+      "direction": "Hemmesta",
+      "state": "EXPECTED",
+      "display": "16:00",
+      "scheduled": "2026-11-20T16:00:00",
+      "expected": "2026-11-20T16:00:00",
+      "journey": {
+        "id": 2026112000101,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 435,
+        "designation": "435C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mölnvik",
+      "direction_code": 1,
+      "direction": "Mölnvik",
+      "state": "EXPECTED",
+      "display": "16:05",
+      "scheduled": "2026-11-20T16:05:00",
+      "expected": "2026-11-20T16:05:00",
+      "journey": {
+        "id": 2026112000001,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 480,
+        "designation": "480C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Västra Orminge",
+      "direction_code": 1,
+      "direction": "Västra Orminge",
+      "state": "EXPECTED",
+      "display": "16:10",
+      "scheduled": "2026-11-20T16:10:00",
+      "expected": "2026-11-20T16:10:00",
+      "journey": {
+        "id": 2026112001001,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 446,
+        "designation": "446C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Östra Orminge",
+      "direction_code": 1,
+      "direction": "Insjön",
+      "state": "EXPECTED",
+      "display": "16:20",
+      "scheduled": "2026-11-20T16:20:00",
+      "expected": "2026-11-20T16:20:00",
+      "journey": {
+        "id": 2026112001003,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 445,
+        "designation": "445C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mölnvik",
+      "direction_code": 1,
+      "direction": "Mölnvik",
+      "state": "EXPECTED",
+      "display": "16:25",
+      "scheduled": "2026-11-20T16:25:00",
+      "expected": "2026-11-20T16:25:00",
+      "journey": {
+        "id": 2026112000003,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 480,
+        "designation": "480C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Västra Orminge",
+      "direction_code": 1,
+      "direction": "Västra Orminge",
+      "state": "EXPECTED",
+      "display": "16:30",
+      "scheduled": "2026-11-20T16:30:00",
+      "expected": "2026-11-20T16:30:00",
+      "journey": {
+        "id": 2026112001003,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 446,
+        "designation": "446C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hemmesta",
+      "direction_code": 1,
+      "direction": "Hemmesta",
+      "state": "EXPECTED",
+      "display": "16:30",
+      "scheduled": "2026-11-20T16:30:00",
+      "expected": "2026-11-20T16:30:00",
+      "journey": {
+        "id": 2026112000103,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 435,
+        "designation": "435C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Östra Orminge",
+      "direction_code": 1,
+      "direction": "Insjön",
+      "state": "EXPECTED",
+      "display": "16:40",
+      "scheduled": "2026-11-20T16:40:00",
+      "expected": "2026-11-20T16:40:00",
+      "journey": {
+        "id": 2026112001005,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 445,
+        "designation": "445C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Mölnvik",
+      "direction_code": 1,
+      "direction": "Mölnvik",
+      "state": "EXPECTED",
+      "display": "16:45",
+      "scheduled": "2026-11-20T16:45:00",
+      "expected": "2026-11-20T16:45:00",
+      "journey": {
+        "id": 2026112000005,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 480,
+        "designation": "480C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Västra Orminge",
+      "direction_code": 1,
+      "direction": "Västra Orminge",
+      "state": "EXPECTED",
+      "display": "16:50",
+      "scheduled": "2026-11-20T16:50:00",
+      "expected": "2026-11-20T16:50:00",
+      "journey": {
+        "id": 2026112001005,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 446,
+        "designation": "446C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Hemmesta",
+      "direction_code": 1,
+      "direction": "Hemmesta",
+      "state": "EXPECTED",
+      "display": "17:00",
+      "scheduled": "2026-11-20T17:00:00",
+      "expected": "2026-11-20T17:00:00",
+      "journey": {
+        "id": 2026112000105,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 10910,
+        "name": "Cityterminalen",
+        "type": "BUSTERM"
+      },
+      "stop_point": {
+        "id": 10911,
+        "name": "Cityterminalen"
+      },
+      "line": {
+        "id": 435,
+        "designation": "435C",
+        "transport_authority_id": 1,
+        "transport_mode": "BUS"
+      },
+      "deviations": []
+    },
+    {
+      "destination": "Uppsala C",
+      "direction_code": 2,
+      "direction": "Uppsala C",
+      "state": "EXPECTED",
+      "display": "00:38",
+      "scheduled": "2026-11-21T00:38:00",
+      "expected": "2026-11-21T00:38:00",
+      "journey": {
+        "id": 2026112002282,
+        "state": "EXPECTED"
+      },
+      "stop_area": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "type": "RAILWSTN"
+      },
+      "stop_point": {
+        "id": 5310,
+        "name": "Stockholm City",
+        "designation": "1"
+      },
+      "line": {
+        "id": 40,
+        "designation": "40",
+        "transport_authority_id": 1,
+        "transport_mode": "TRAIN",
+        "group_of_lines": "Pendeltåg"
+      },
+      "deviations": []
+    }
+  ],
+  "stop_deviations": [
+    {
+      "id": 13390434,
+      "importance_level": 5,
+      "message": "Det kan vara halt på plattformen, var försiktig!",
+      "scope": {
+        "stop_areas": [
+          {
+            "id": 4301,
+            "href": "null/stop-areas/4301",
+            "name": "T-Centralen",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4303,
+            "href": "null/stop-areas/4303",
+            "name": "Kungsträdgården",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4305,
+            "href": "null/stop-areas/4305",
+            "name": "Nybroplan",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4307,
+            "href": "null/stop-areas/4307",
+            "name": "Styrmansgatan",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4309,
+            "href": "null/stop-areas/4309",
+            "name": "Djurgårdsbron",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4311,
+            "href": "null/stop-areas/4311",
+            "name": "Nordiska museet/Vasamuseet",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4313,
+            "href": "null/stop-areas/4313",
+            "name": "Liljevalchs/Gröna Lund",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4315,
+            "href": "null/stop-areas/4315",
+            "name": "Skansen",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4317,
+            "href": "null/stop-areas/4317",
+            "name": "Djurgårdsskolan",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4318,
+            "href": "null/stop-areas/4318",
+            "name": "Bellmansro",
+            "type": "TRAMSTN"
+          },
+          {
+            "id": 4319,
+            "href": "null/stop-areas/4319",
+            "name": "Waldemarsudde",
+            "type": "TRAMSTN"
+          }
+        ],
+        "lines": [
+          {
+            "id": 7,
+            "href": "null/transport-authorities/1/lines/7",
+            "designation": "7",
+            "transport_authority_id": 1,
+            "transport_mode": "TRAM",
+            "group_of_lines": "Spårväg City"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+[
+  {
+    "version": 2,
+    "created": "2026-09-03T05:31:36.43+02:00",
+    "modified": "2026-09-03T05:31:36.43+02:00",
+    "deviation_case_id": 12388104,
+    "publish": {
+      "from": "2026-09-03T07:00:00+02:00",
+      "upto": "2027-10-01T23:30:00+02:00"
+    },
+    "priority": {
+      "importance_level": 7,
+      "influence_level": 5,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Hållplats Slussen läge C flyttad",
+        "details": "Hållplats Slussen läge C är tillfälligt flyttad till Hornsgatan för buss linje 57 mot Frösundavik och 76 mot Ropsten från och med 2026-09-03 kl 7:00 pga vägarbete.\nDetta planeras pågå till och med 2027-10-01.",
+        "scope_alias": "Buss 57, 76",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 11002,
+          "name": "Slussen",
+          "type": "BUSTERM",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 76,
+          "transport_authority": 1,
+          "designation": "76",
+          "transport_mode": "BUS"
+        },
+        {
+          "id": 57,
+          "transport_authority": 1,
+          "designation": "57",
+          "transport_mode": "BUS"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-09-07T13:42:01.637+02:00",
+    "modified": "2026-09-07T13:42:01.637+02:00",
+    "deviation_case_id": 12541129,
+    "publish": {
+      "from": "2026-09-07T13:42:01.63+02:00",
+      "upto": "2026-11-30T23:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Entré vid Östermalmstorg stängd",
+        "details": "Östermalmstorg: Entrén från Grev Turegatan är stängd på grund av underhållsarbete. \n\nEndast hissen är tillgänglig vid entrén från Grev Turegatan, det går inte att använda trapporna. Vi hänvisar till entrén från Birger Jarlsgatan under pågående ombyggnation.\n\nEntrén kommer att vara stängd till och med november 2026. ",
+        "scope_alias": "Tunnelbanans röda linje 13, 14",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 2101,
+          "name": "Östermalmstorg",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 13,
+          "transport_authority": 1,
+          "designation": "13",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        },
+        {
+          "id": 14,
+          "transport_authority": 1,
+          "designation": "14",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-10-06T08:56:12.033+02:00",
+    "modified": "2026-10-06T08:56:12.033+02:00",
+    "deviation_case_id": 12869517,
+    "publish": {
+      "from": "2026-10-06T08:56:11.953+02:00",
+      "upto": "2026-12-17T05:00:00+01:00"
+    },
+    "priority": {
+      "importance_level": 7,
+      "influence_level": 5,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Indragen hållplats",
+        "details": "Buss linje 2 mot Sofia, 57 mot Sofia, 76 mot N Hammarbyhamnen och 96 mot Sickla udde stannar inte vid Kungsträdgården på grund av vägarbete från och med 2026-10-05 kl 21:00.\nDetta gäller till och med 2026-12-17 kl 5:00.\nDu kan resa från hållplats Karl XII:s torg\nObs - Detta gäller endast nattetid mellan kl 21.00 och 05.00 måndag - torsdag.",
+        "scope_alias": "Blåbuss 2; Buss 57, 76, 96",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 10294,
+          "name": "Kungsträdgården",
+          "type": "BUSTERM",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 2,
+          "transport_authority": 1,
+          "designation": "2",
+          "transport_mode": "BUS",
+          "group_of_lines": "blåbuss"
+        },
+        {
+          "id": 57,
+          "transport_authority": 1,
+          "designation": "57",
+          "transport_mode": "BUS"
+        },
+        {
+          "id": 76,
+          "transport_authority": 1,
+          "designation": "76",
+          "transport_mode": "BUS"
+        },
+        {
+          "id": 96,
+          "transport_authority": 1,
+          "designation": "96",
+          "transport_mode": "BUS"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-10-15T10:29:35.687+02:00",
+    "modified": "2026-10-15T10:29:35.687+02:00",
+    "deviation_case_id": 12977094,
+    "publish": {
+      "from": "2026-11-17T05:00:00+01:00",
+      "upto": "2026-11-30T23:00:00+01:00"
+    },
+    "priority": {
+      "importance_level": 5,
+      "influence_level": 5,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Bryggan Ängsö vid Tyresö indragen",
+        "details": "Bryggan Ängsö vid Tyresö indragen för reparation. Arbetet beräknas pågå till 30 november.",
+        "scope_alias": "Waxholmsbolaget 17, 18, 19",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 206,
+          "name": "Ängsö",
+          "type": "SHIPBER",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 17,
+          "transport_authority": 8,
+          "designation": "17",
+          "transport_mode": "SHIP",
+          "group_of_lines": "Waxholmsbolaget"
+        },
+        {
+          "id": 18,
+          "transport_authority": 8,
+          "designation": "18",
+          "transport_mode": "SHIP",
+          "group_of_lines": "Waxholmsbolaget"
+        },
+        {
+          "id": 19,
+          "transport_authority": 8,
+          "designation": "19",
+          "transport_mode": "SHIP",
+          "group_of_lines": "Waxholmsbolaget"
+        }
+      ]
+    }
+  },
+  {
+    "version": 2,
+    "created": "2026-10-21T05:46:00.193+02:00",
+    "modified": "2026-10-21T05:46:00.193+02:00",
+    "deviation_case_id": 13041372,
+    "publish": {
+      "from": "2026-10-21T05:46:00.187+02:00",
+      "upto": "2026-12-30T17:00:37+01:00"
+    },
+    "priority": {
+      "importance_level": 7,
+      "influence_level": 5,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Hållplats Sabbatsbergs sjukhus flyttad",
+        "details": "Hållplats Sabbatsbergs sjukhus är flyttad till Dalagatan där hållplats delas med linje 61 i färdriktningen för buss linje 2 mot Norrtull, 53 mot Karolinska inst och 57 mot Frösundavik från och med 2026-10-21 pga vägarbete.\nDetta planeras pågå till och med 2026-12-30.",
+        "scope_alias": "Buss 53, 57; blåbuss 2",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 10280,
+          "name": "Sabbatsbergs sjukhus",
+          "type": "BUSTERM",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 53,
+          "transport_authority": 1,
+          "designation": "53",
+          "transport_mode": "BUS"
+        },
+        {
+          "id": 57,
+          "transport_authority": 1,
+          "designation": "57",
+          "transport_mode": "BUS"
+        },
+        {
+          "id": 2,
+          "transport_authority": 1,
+          "designation": "2",
+          "transport_mode": "BUS",
+          "group_of_lines": "blåbuss"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-11-05T11:44:14.42+01:00",
+    "modified": "2026-11-05T11:44:14.42+01:00",
+    "deviation_case_id": 13218814,
+    "publish": {
+      "from": "2026-11-05T11:44:14.413+01:00",
+      "upto": "2026-11-30T01:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Utgången vid Liljeholmen mot Trekanten är avstängd",
+        "details": "Utgången samt hissen vid Liljeholmen mot Trekanten är avstängd sedan måndag den 12 oktober på grund av arbeten med tunnelbanans nya gula linje. Även utomhustrappan från Liljeholmstorget mot Trekanten är avstängd. \n\nUtgången från tunnelbanan och utomhustrappan kommer att vara avstängda under hela arbetets gång. För passage mot Trekanten hänvisar vi till utgången mot Nybohovshissen alternativt utgången mot Tvärbanan. \n\nLäs mer om den nya gula linjen på nyatunnelbanan.se/gul-linje.",
+        "scope_alias": "Tunnelbanans röda linje 13, 14",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 2601,
+          "name": "Liljeholmen",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 14,
+          "transport_authority": 1,
+          "designation": "14",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        },
+        {
+          "id": 13,
+          "transport_authority": 1,
+          "designation": "13",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-11-11T14:04:12.083+01:00",
+    "modified": "2026-11-11T14:04:12.083+01:00",
+    "deviation_case_id": 13288336,
+    "publish": {
+      "from": "2026-11-11T14:04:12.08+01:00",
+      "upto": "2026-11-23T05:00:00+01:00"
+    },
+    "priority": {
+      "importance_level": 7,
+      "influence_level": 5,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Hållplats Hangövägen flyttad",
+        "details": "Hållplats Hangövägen är flyttad 20 meter framåt i färdriktningen för buss linje 76 mot N Hammarbyhamnen från och med 2026-10-15 pga vägarbete.\nDetta planeras pågå till och med 2026-11-23.",
+        "scope_alias": "Buss 76",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 10069,
+          "name": "Hangövägen",
+          "type": "BUSTERM",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 76,
+          "transport_authority": 1,
+          "designation": "76",
+          "transport_mode": "BUS"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-11-14T20:00:00.167+01:00",
+    "modified": "2026-11-14T20:00:00.167+01:00",
+    "deviation_case_id": 13329021,
+    "publish": {
+      "from": "2026-11-20T09:15:00+01:00",
+      "upto": "2026-11-20T23:19:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Extrainsatta avgångar",
+        "details": "Extrainsatta avgångar den 20 november från Globen mot innerstan cirka kl. 22:00-23:20 med anledning av evenemang.",
+        "scope_alias": "Tunnelbanans gröna linje 19",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 1611,
+          "name": "Globen",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 19,
+          "transport_authority": 1,
+          "designation": "19",
+          "transport_mode": "METRO",
+          "name": "Gröna linjen",
+          "group_of_lines": "tunnelbanans gröna linje"
+        }
+      ]
+    }
+  },
+  {
+    "version": 1,
+    "created": "2026-11-16T14:24:07.537+01:00",
+    "modified": "2026-11-16T14:24:07.537+01:00",
+    "deviation_case_id": 13343044,
+    "publish": {
+      "from": "2026-11-16T14:24:07.53+01:00",
+      "upto": "2026-12-04T01:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Avstängd hiss vid Skärmarbrink",
+        "details": "Skärmarbrink: Hissen mellan biljetthallen och plattformen för tåg mot Hässelby strand är avstängd pga tekniskt fel. Resenärer i behov av hiss hänvisas till angränsande stationer eller hissen vid den andra plattformen vid Skärmarbrink, som nås genom tågbyte.\n\nHissen beräknas åter vara i drift den 4 december.\n\nHissen omfattas av tillgänglighetsgarantin. För mer information om tillgänglighet, kontakta SL på telefonnummer 020-120 20 22.",
+        "scope_alias": "Tunnelbanans gröna linje 17, 18",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 1601,
+          "name": "Skärmarbrink",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 18,
+          "transport_authority": 1,
+          "designation": "18",
+          "transport_mode": "METRO",
+          "name": "Gröna linjen",
+          "group_of_lines": "tunnelbanans gröna linje"
+        },
+        {
+          "id": 17,
+          "transport_authority": 1,
+          "designation": "17",
+          "transport_mode": "METRO",
+          "name": "Gröna linjen",
+          "group_of_lines": "tunnelbanans gröna linje"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "group": "FACILITY",
+        "type": "LIFT"
+      }
+    ]
+  },
+  {
+    "version": 3,
+    "created": "2026-11-18T09:24:22.73+01:00",
+    "modified": "2026-11-18T09:24:22.73+01:00",
+    "deviation_case_id": 13365724,
+    "publish": {
+      "from": "2026-11-18T09:24:22.727+01:00",
+      "upto": "2026-12-31T23:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Avstängd hiss vid Danderyds sjukhus",
+        "details": "Hissen vid Danderyds sjukhus, mellan plattformen och biljetthallen vid entrén mot Mörbyskolan, är avstängd på grund av underhållsarbete. Resenärer i behov av hiss hänvisas till den andra entrén, mot bussterminalen.\n \nHissen beräknas åter vara i drift den 31 december.\n\nHissen omfattas av tillgänglighetsgarantin. För mer information om tillgänglighet, kontakta SL på telefonnummer 020-120 20 22.",
+        "scope_alias": "Tunnelbanans röda linje 14",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 2251,
+          "name": "Danderyds sjukhus",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 14,
+          "transport_authority": 1,
+          "designation": "14",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "group": "FACILITY",
+        "type": "LIFT"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "created": "2026-11-19T21:48:00.87+01:00",
+    "modified": "2026-11-19T21:48:00.87+01:00",
+    "deviation_case_id": 13387760,
+    "publish": {
+      "from": "2026-11-19T21:48:00.87+01:00",
+      "upto": "2026-11-26T23:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Avstängd hiss vid Hägerstensåsen",
+        "details": "Hissen vid Hägerstensåsen, entrén mot Personnevägen, är avstängd på grund av tekniskt fel. Resenärer i behov av hiss hänvisas till den andra entrén, mot Hägerstensåsen.\n \nVi saknar prognos för när hissen åter kan vara i drift.\n\nHissen omfattas av tillgänglighetsgarantin. För mer information om tillgänglighet, kontakta SL på telefonnummer 020-120 20 22.",
+        "scope_alias": "Tunnelbanans röda linje 14",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 2831,
+          "name": "Hägerstensåsen",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 14,
+          "transport_authority": 1,
+          "designation": "14",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "group": "FACILITY",
+        "type": "LIFT"
+      }
+    ]
+  },
+  {
+    "version": 1,
+    "created": "2026-11-20T09:10:03.663+01:00",
+    "modified": "2026-11-20T09:10:03.663+01:00",
+    "deviation_case_id": 13392185,
+    "publish": {
+      "from": "2026-11-20T09:10:03.657+01:00",
+      "upto": "2026-11-27T23:30:00+01:00"
+    },
+    "priority": {
+      "importance_level": 2,
+      "influence_level": 3,
+      "urgency_level": 1
+    },
+    "message_variants": [
+      {
+        "header": "Avstängd hiss vid Mariatorget",
+        "details": "En av hissarna vid Mariatorget, entrén mot Mariatorget, är avstängd på grund av tekniskt fel. Resenärer i behov av hiss hänvisas till den andra entrén, mot Polishuset.\n \nVi saknar prognos för när hissen åter kan vara i drift.\n\nHissen omfattas av tillgänglighetsgarantin. För mer information om tillgänglighet, kontakta SL på telefonnummer 020-120 20 22.",
+        "scope_alias": "Tunnelbanans röda linje 13, 14",
+        "language": "sv"
+      }
+    ],
+    "scope": {
+      "stop_areas": [
+        {
+          "id": 2511,
+          "name": "Mariatorget",
+          "type": "METROSTN",
+          "transport_authority": 1
+        }
+      ],
+      "lines": [
+        {
+          "id": 13,
+          "transport_authority": 1,
+          "designation": "13",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        },
+        {
+          "id": 14,
+          "transport_authority": 1,
+          "designation": "14",
+          "transport_mode": "METRO",
+          "name": "Röda linjen",
+          "group_of_lines": "tunnelbanans röda linje"
+        }
+      ]
+    },
+    "categories": [
+      {
+        "group": "FACILITY",
+        "type": "LIFT"
+      }
+    ]
+  }
+]
