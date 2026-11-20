@@ -115,7 +115,7 @@ function tableProblems(table, name, max, render = (value) => value) {
 
 // Renders a function entry with plausible long parameters.
 const SAMPLE = {
-  query: 'Oslo bussterminal Vaterland',
+  query: 'Slussen (ersättningstrafik)',
   count: 8,
   name: 'Jernbanetorget (30, 31 · → Bygdøy via Bygdøynes · Bus)',
   lines: '17, 99',
@@ -130,7 +130,7 @@ const SAMPLE = {
   delay: 14,
   line: 'Metro 17',
   destination: 'Drammen via Lysaker',
-  stop: 'Oslo S',
+  stop: 'Slussen',
   when: 'dans 3 et 17 min',
 };
 const renderSample = (value) => (typeof value === 'function' ? value(SAMPLE) : value);

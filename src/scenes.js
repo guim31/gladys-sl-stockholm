@@ -3,7 +3,7 @@
 //
 // - get_next_departures: the next departures of a watched stop, as numbers for
 //   a "Continue only if" step and as a sentence ready for a message or a
-//   speaker ("Train L1 to Spikkestad at Oslo S: in 3 and 18 min").
+//   speaker ("Metro 17 to Åkeshov at Slussen: in 3 and 8 min").
 //
 // A scene action does not receive the user's language: the sentence follows
 // the `language` of the configuration. Outputs are numbers, never booleans:
