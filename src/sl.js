@@ -131,7 +131,15 @@ export class Sl {
    * SL refuses.
    * @returns {Promise<{ id: number, name: string, note: string, aliases: string[], stopAreas: number[] }[]>}
    */
-  async sites() {
+  sites() {
+    // Two actions at once share one read: a second one is what SL refuses.
+    this.sitesLoading ??= this.loadSites().finally(() => {
+      this.sitesLoading = null;
+    });
+    return this.sitesLoading;
+  }
+
+  async loadSites() {
     if (this.sitesCache && this.now() - this.sitesCache.at < SITES_TTL_MS) {
       return this.sitesCache.sites;
     }

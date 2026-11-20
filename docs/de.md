@@ -52,7 +52,7 @@ Schlüssel**. Diese Integration steht in keiner Verbindung zu SL oder Trafiklab.
    - **Linien**: `17, 18` behält nur diese Linien (wie am Fahrzeug geschrieben: `43X`, `474`…), geprüft
      an den Abfahrten der nächsten 20 Stunden.
    - **Richtung**: `Hagsätra` behält nur Abfahrten, deren Ziel diesen Text enthält (Akzente und
-     Groß-/Kleinschreibung egal, `hagsatra` geht auch).
+     Groß-/Kleinschreibung egal, `hagsatra` geht auch), geprüft an den Abfahrten der nächsten 20 Stunden.
    - **Verkehrsmittel**: U-Bahn, Pendelzug, Tram, Bus oder Schiff, für große Knoten.
 3. Öffne den Tab **Entdecken** und füge das Gerät zu Gladys hinzu.
 

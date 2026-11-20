@@ -92,7 +92,7 @@ export class SlService {
     this.config = { language: 'fr', refreshSeconds: 60 };
     this.watches = [];
     this.removed = [];
-    this.memory = { announced: {}, checked: [] };
+    this.memory = { announced: {}, checked: [], messagesChecked: [] };
     // watchKey → { departures, messages, at }
     this.boards = new Map();
     // watchKey → Map(journey key → Set of thresholds handled), in memory only.
@@ -116,13 +116,16 @@ export class SlService {
     this.memory = {
       announced: saved.announced && typeof saved.announced === 'object' ? saved.announced : {},
       checked: Array.isArray(saved.checked) ? saved.checked : [],
+      // Watches whose traffic messages in force were read once (not news).
+      messagesChecked: Array.isArray(saved.messagesChecked) ? saved.messagesChecked : [],
     };
     this.removed = Array.isArray(saved.removed) ? saved.removed : [];
     await this.restoreFromDevices();
     await this.publishDiscovered();
     await this.gladys.setConnectionStatus(true).catch(() => {});
     this.startTimer();
-    await this.refresh();
+    // A failure here is not an initialization failure: the timer goes on.
+    await this.refresh().catch((err) => logger.error('First refresh failed', err));
   }
 
   async resync(config) {
@@ -154,6 +157,11 @@ export class SlService {
     this.timer = null;
     if (this.timers) {
       this.timer = setInterval(() => {
+        // A read still running (SL slow, 429 retries): this tick is skipped,
+        // never queued behind it.
+        if (this.inflight) {
+          return;
+        }
         this.refresh().catch((err) => logger.error('Refresh failed', err));
       }, this.config.refreshSeconds * 1000);
       this.timer.unref?.();
@@ -172,6 +180,7 @@ export class SlService {
       watches: this.watches,
       announced: this.memory.announced,
       checked: this.memory.checked,
+      messagesChecked: this.memory.messagesChecked,
       removed: this.removed,
     });
   }
@@ -281,6 +290,7 @@ export class SlService {
     if (watches.length === 0) {
       return;
     }
+    this.attemptedAt = this.now();
     // One request per watch, one after the other: never a burst on the API.
     const results = [];
     let lastError = null;
@@ -345,6 +355,7 @@ export class SlService {
     }
     try {
       this.slMessages.list = await this.sl.messages();
+      this.slMessages.loaded = true;
       if (this.slMessages.failed) {
         logger.info('SL traffic messages read again');
       }
@@ -490,11 +501,21 @@ export class SlService {
     this.delayDone.set(key, delays);
 
     // One event per message and line: a scene filtered on either line hears it.
+    // The messages in force at the first successful read of the list are not
+    // news (the list may fail while the departures are read).
+    if (!this.slMessages.loaded) {
+      return { events, memoryChanged };
+    }
+    const messagesFirst = !this.memory.messagesChecked.includes(key);
+    if (messagesFirst) {
+      this.memory.messagesChecked.push(key);
+      memoryChanged = true;
+    }
     for (const message of messages) {
       const memoryKey = `${key}|message|${message.id}`;
       const memo = this.remember(memoryKey, now);
       memoryChanged ||= memo.changed;
-      if (!memo.fresh || firstEver) {
+      if (!memo.fresh || messagesFirst) {
         continue;
       }
       for (const line of message.lines.length > 0 ? message.lines : ['']) {
@@ -569,9 +590,12 @@ export class SlService {
       return null;
     }
     let board = this.boards.get(watchKey(watch));
+    // Read again when stale, unless a read was just tried (SL down: the aged
+    // board is served at once instead of a read per widget or scene).
     if (
       this.isCreated(externalId) &&
-      (!board || this.now() - board.at > this.config.refreshSeconds * 2000)
+      (!board || this.now() - board.at > this.config.refreshSeconds * 2000) &&
+      !(this.now() - (this.attemptedAt ?? 0) < this.config.refreshSeconds * 1000)
     ) {
       await this.refresh();
       board = this.boards.get(watchKey(watch));
@@ -703,6 +727,23 @@ export class SlService {
           ) || '—',
       });
     }
+    const wantedDirection = clip(String(direction ?? '').trim(), 40);
+    if (wantedDirection) {
+      // Checked like the lines: a typo would give a device that never counts down.
+      const kept = applyFilters(departures, { lines, mode: wantedMode });
+      if (applyFilters(kept, { direction: wantedDirection }).length === 0) {
+        throw this.fail('addUnknownDirection', {
+          direction: wantedDirection,
+          available:
+            clip(
+              [...new Set(kept.map((departure) => departure.destination))]
+                .sort((x, y) => x.localeCompare(y, 'sv'))
+                .join(', '),
+              160,
+            ) || '—',
+        });
+      }
+    }
     const watch = {
       id: site.id,
       name: site.name,
@@ -713,7 +754,7 @@ export class SlService {
       // "METRO:17": the lines of the traffic messages, and the server filter.
       lineRefs: lines.flatMap((line) => served.get(line)),
       stopAreas: site.stopAreas,
-      direction: clip(String(direction ?? '').trim(), 40),
+      direction: wantedDirection,
       mode: wantedMode,
     };
     const key = watchKey(watch);
@@ -762,6 +803,7 @@ export class SlService {
     this.delayDone.delete(key);
     this.checkedNow.delete(key);
     this.memory.checked = this.memory.checked.filter((checked) => checked !== key);
+    this.memory.messagesChecked = this.memory.messagesChecked.filter((k) => k !== key);
     for (const memoryKey of Object.keys(this.memory.announced)) {
       if (memoryKey.startsWith(`${key}|`)) {
         delete this.memory.announced[memoryKey];

@@ -95,8 +95,10 @@ export const TEXT = {
     addAmbiguous: 'Several stops match: use the number of the one you want.',
     addUnknownLines: ({ lines, available }) =>
       `Line(s) not served at this stop: ${lines}. Lines of the next 20 hours: ${available}.`,
+    addUnknownDirection: ({ direction, available }) =>
+      `No departure towards "${direction}" in the next 20 hours. Destinations: ${available}.`,
     addUnknownMode: ({ mode }) =>
-      `Unknown mode "${mode}": METRO, TRAIN, TRAM, BUS, SHIP, FERRY or empty.`,
+      `Unknown mode "${mode}": METRO, TRAIN, TRAM, BUS, SHIP, FERRY, TAXI or empty.`,
     added: ({ name }) => `${name} added.\nOpen the Discover tab to create its device.`,
     alreadyWatched: ({ name }) => `${name} is already watched with these filters.`,
     tooMany: ({ max }) => `You already watch ${max} stops, the maximum.`,
@@ -137,8 +139,10 @@ export const TEXT = {
     addAmbiguous: 'Plusieurs arrêts correspondent : utilisez le numéro de celui que vous voulez.',
     addUnknownLines: ({ lines, available }) =>
       `Ligne(s) absente(s) de cet arrêt : ${lines}. Lignes des 20 prochaines heures : ${available}.`,
+    addUnknownDirection: ({ direction, available }) =>
+      `Aucun départ vers « ${direction} » dans les 20 heures. Destinations : ${available}.`,
     addUnknownMode: ({ mode }) =>
-      `Mode « ${mode} » inconnu : METRO, TRAIN, TRAM, BUS, SHIP, FERRY ou vide.`,
+      `Mode « ${mode} » inconnu : METRO, TRAIN, TRAM, BUS, SHIP, FERRY, TAXI ou vide.`,
     added: ({ name }) => `${name} ajouté.\nOuvrez l'onglet Découverte pour créer son appareil.`,
     alreadyWatched: ({ name }) => `${name} est déjà suivi avec ces filtres.`,
     tooMany: ({ max }) => `Vous suivez déjà ${max} arrêts, le maximum.`,
@@ -181,8 +185,10 @@ export const TEXT = {
     addAmbiguous: 'Mehrere Haltestellen passen: nimm die Nummer der gewünschten.',
     addUnknownLines: ({ lines, available }) =>
       `Linie(n) hier nicht bedient: ${lines}. Linien der nächsten 20 Stunden: ${available}.`,
+    addUnknownDirection: ({ direction, available }) =>
+      `Keine Abfahrt Richtung „${direction}“ in den nächsten 20 Stunden. Ziele: ${available}.`,
     addUnknownMode: ({ mode }) =>
-      `Unbekanntes Verkehrsmittel „${mode}“: METRO, TRAIN, TRAM, BUS, SHIP, FERRY oder leer.`,
+      `Unbekanntes Verkehrsmittel „${mode}“: METRO, TRAIN, TRAM, BUS, SHIP, FERRY, TAXI oder leer.`,
     added: ({ name }) => `${name} hinzugefügt.\nÖffne den Tab „Entdecken“, um das Gerät anzulegen.`,
     alreadyWatched: ({ name }) => `${name} wird mit diesen Filtern schon verfolgt.`,
     tooMany: ({ max }) => `Du verfolgst schon ${max} Haltestellen, das Maximum.`,
@@ -226,8 +232,10 @@ export const TEXT = {
     addAmbiguous: 'Varias paradas coinciden: use el número de la que desea.',
     addUnknownLines: ({ lines, available }) =>
       `Línea(s) sin servicio en esta parada: ${lines}. Líneas de las próximas 20 horas: ${available}.`,
+    addUnknownDirection: ({ direction, available }) =>
+      `Ninguna salida hacia «${direction}» en las próximas 20 horas. Destinos: ${available}.`,
     addUnknownMode: ({ mode }) =>
-      `Modo «${mode}» desconocido: METRO, TRAIN, TRAM, BUS, SHIP, FERRY o vacío.`,
+      `Modo «${mode}» desconocido: METRO, TRAIN, TRAM, BUS, SHIP, FERRY, TAXI o vacío.`,
     added: ({ name }) => `${name} añadida.\nAbra la pestaña Descubrir para crear su dispositivo.`,
     alreadyWatched: ({ name }) => `${name} ya se sigue con estos filtros.`,
     tooMany: ({ max }) => `Ya sigue ${max} paradas, el máximo.`,

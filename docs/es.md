@@ -51,7 +51,7 @@ cuenta ni clave**. Esta integración no está afiliada a SL ni a Trafiklab.
    - **Líneas**: `17, 18` solo conserva esas líneas (tal como aparecen en el vehículo: `43X`,
      `474`…). Se comprueban con las salidas de las próximas 20 horas.
    - **Dirección**: `Hagsätra` solo conserva las salidas cuyo destino contiene ese texto (sin
-     importar acentos ni mayúsculas, `hagsatra` también vale).
+     importar acentos ni mayúsculas, `hagsatra` también vale), comprobada con las salidas de las próximas 20 horas.
    - **Modo**: metro, tren de cercanías, tranvía, autobús o barco, para los grandes nudos.
 3. Abra la pestaña **Descubrir** y añada el dispositivo a Gladys.
 

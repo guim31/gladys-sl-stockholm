@@ -49,7 +49,7 @@ clé**. Cette intégration n'est affiliée ni à SL ni à Trafiklab.
    - **Lignes** : `17, 18` ne garde que ces lignes (telles qu'écrites sur le véhicule : `43X`,
      `474`…). Elles sont vérifiées sur les départs des 20 prochaines heures.
    - **Direction** : `Hagsätra` ne garde que les départs dont la destination contient ce texte
-     (accents et majuscules ignorés, `hagsatra` marche aussi).
+     (accents et majuscules ignorés, `hagsatra` marche aussi), vérifiée sur les départs des 20 prochaines heures.
    - **Mode** : métro, pendeltåg, tram, bus ou bateau, pour les grands pôles.
 3. Ouvrez l'onglet **Découverte** et ajoutez l'appareil à Gladys.
 

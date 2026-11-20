@@ -137,3 +137,11 @@ test('the site list is kept in /data and used stale when SL refuses it', async (
   });
   assert.equal((await late.sites()).length, 9);
 });
+
+test('two searches at once share one read of the site list', async () => {
+  const network = createFetch();
+  const sl = new Sl({ fetch: network.fetch, sleep: async () => {} });
+  const [a, b] = await Promise.all([sl.sites(), sl.sites()]);
+  assert.equal(a, b);
+  assert.equal(network.calls.length, 1);
+});

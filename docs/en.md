@@ -48,7 +48,7 @@ no key**. This integration is not affiliated with SL or Trafiklab.
    - **Lines**: `17, 18` keeps only these lines (as written on the vehicle: `43X`, `474`…). The
      lines are checked against the departures of the next 20 hours.
    - **Direction**: `Hagsätra` keeps only the departures whose destination contains this text
-     (accents and case ignored, `hagsatra` works too).
+     (accents and case ignored, `hagsatra` works too), checked against the departures of the next 20 hours.
    - **Mode**: metro, commuter train, tram, bus or boat, for the large hubs.
 3. Open the **Discover** tab and add the device to Gladys.
 

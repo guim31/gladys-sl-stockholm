@@ -117,10 +117,11 @@ function tableProblems(table, name, max, render = (value) => value) {
 const SAMPLE = {
   query: 'Slussen (ersättningstrafik)',
   count: 8,
-  name: 'Jernbanetorget (30, 31 · → Bygdøy via Bygdøynes · Bus)',
+  name: 'Slussen (17, 18 · → Hagsätra · Metro)',
   lines: '17, 99',
   available: '2, 3, 13, 14, 17, 18, 19, 55, 57, 76',
-  mode: 'Standseilbahn',
+  mode: 'FUNICULAR',
+  direction: 'Hässelby strand',
   max: 20,
   age: 42,
   error: 'transport.integration.sl.se: HTTP 503',
@@ -129,7 +130,7 @@ const SAMPLE = {
   second: 17,
   delay: 14,
   line: 'Metro 17',
-  destination: 'Drammen via Lysaker',
+  destination: 'Hässelby strand',
   stop: 'Slussen',
   when: 'dans 3 et 17 min',
 };

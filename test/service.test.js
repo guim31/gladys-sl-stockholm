@@ -84,11 +84,11 @@ test('add a stop: homonyms, unknown line or mode, filters in the name, duplicate
   const added = await action(world, 'add_stop', {
     stop: '9192',
     lines: '18 17',
-    direction: 'Hagsatra',
+    direction: 'Skarpnack',
   });
   assert.equal(
     fr(added),
-    "Slussen (17, 18 · → Hagsatra) ajouté.\nOuvrez l'onglet Découverte pour créer son appareil.",
+    "Slussen (17, 18 · → Skarpnack) ajouté.\nOuvrez l'onglet Découverte pour créer son appareil.",
   );
   const byName = await action(world, 'add_stop', { stop: 't-centralen', mode: 'train' });
   assert.match(fr(byName), /^T-Centralen \(Pendeltåg\) ajouté/);
@@ -100,7 +100,7 @@ test('add a stop: homonyms, unknown line or mode, filters in the name, duplicate
   assert.deepEqual(
     devices.map((d) => [d.name, d.external_id]),
     [
-      ['SL · Slussen (17, 18 · → Hagsatra)', 'ext:test-integration:stop:9192-17-18-to-hagsatra'],
+      ['SL · Slussen (17, 18 · → Skarpnack)', 'ext:test-integration:stop:9192-17-18-to-skarpnack'],
       ['SL · T-Centralen (Pendeltåg)', 'ext:test-integration:stop:9001-train'],
     ],
   );
@@ -496,4 +496,84 @@ test('one stop failing keeps the others', async (t) => {
   assert.equal(world.fake.connectionStatus.connected, true);
   assert.equal(lastState(world, pier, 'next'), 11);
   assert.equal(T_CENTRALEN, 9001);
+});
+
+test('a direction no departure goes to is refused, with the destinations', async (t) => {
+  const world = await createWorld();
+  t.after(() => world.app.stop());
+  const error = await failedAction(world, 'add_stop', {
+    stop: '102',
+    lines: '23',
+    direction: 'Stavsnas X',
+  });
+  assert.equal(
+    fr(error),
+    'Aucun départ vers « Stavsnas X » dans les 20 heures. Destinations : Stavsnäs.',
+  );
+  assert.match(
+    fr(await action(world, 'add_stop', { stop: '102', lines: '23', direction: 'stavsnas' })),
+    /ajouté/,
+  );
+});
+
+test('messages already in force are not news, even when their first read failed', async (t) => {
+  const world = await createWorld();
+  t.after(() => world.app.stop());
+  const fetch = world.network.fetch;
+  let refuse = true;
+  world.service.sl.fetch = async (url) =>
+    refuse && url.includes('deviations') ? new Response('{}', { status: 429 }) : fetch(url);
+  await action(world, 'add_stop', { stop: '9192', lines: '76' });
+  const slussen = await create(world, 'Slussen');
+  assert.equal(lastState(world, slussen, 'disruption'), 0);
+  refuse = false;
+  world.clock.advance(MESSAGES_EVERY_MS);
+  await world.service.refresh();
+  assert.equal(lastState(world, slussen, 'disruption'), 1);
+  assert.deepEqual(
+    world.fake.sceneEvents.filter((e) => e.key === TRIGGERS.DISRUPTION),
+    [],
+  );
+});
+
+test('SL down: the widget serves the aged board instead of reading again', async (t) => {
+  const world = await createWorld();
+  t.after(() => world.app.stop());
+  await action(world, 'add_stop', { stop: '102' });
+  const pier = await create(world, 'Styrsvik');
+  world.network.fail = 429;
+  world.clock.advance(3 * 60000);
+  await world.service.refresh();
+  const before = world.network.calls.length;
+  const ack = await world.fake.widgetGet('departures', {
+    settings: { stop: pier.external_id },
+    language: 'en',
+  });
+  assert.equal(ack.data.content.components[2].items[0].value, '09:50 · 9 min');
+  assert.equal(world.network.calls.length, before);
+});
+
+test('a timer tick during a slow read is skipped, not queued', async (t) => {
+  t.mock.timers.enable({ apis: ['setInterval'] });
+  const world = await createWorld({ timers: true });
+  t.after(() => world.app.stop());
+  await action(world, 'add_stop', { stop: '9192' });
+  await create(world, 'Slussen');
+  let release;
+  const gate = new Promise((resolve) => {
+    release = resolve;
+  });
+  const fetch = world.network.fetch;
+  world.service.sl.fetch = async (url) => {
+    await gate;
+    return fetch(url);
+  };
+  const before = world.network.departureRequests().length;
+  t.mock.timers.tick(60000);
+  t.mock.timers.tick(60000);
+  t.mock.timers.tick(60000);
+  release();
+  await world.service.inflight;
+  await world.service.inflight;
+  assert.equal(world.network.departureRequests().length, before + 1);
 });
